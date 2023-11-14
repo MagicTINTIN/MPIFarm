@@ -22,4 +22,12 @@ To compile, just type:
 To start the program:
 ```bash
 /usr/bin/mpirun -np 2 build/MPIFarm
+# or
+mpirun -hostfile hostfile -np 6 build/MPIFarm 
+```
+If you have an `Invalid MIT-MAGIC-COOKIE-1 key6533927` error : 
+```bash
+ssh -X user@remote_machine
+# and/or
+xauth generate :0 . trusted # or :1, check echo $DISPLAY
 ```

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <mpi.h>
 #include <random>
+#include <iostream>
 
 using namespace std;
 using namespace MPI;
@@ -32,14 +33,16 @@ void calculate_full_sum() {
     // all processes except this one is a worker, so worker count is the total amount of processes excluding current
     // process
     auto worker_count = COMM_WORLD.Get_size() - 1;
+    std::cout << std::endl << "COMM_WORLD size : " << COMM_WORLD.Get_size() << std::endl;
+    std::cout << "Worker nb : " << worker_count << std::endl;
     //generate an array of random numbers
     const auto DATA_SIZE = 13000;
     int numbers[DATA_SIZE];
-    random_device rd;
-    mt19937 rng(rd());
-    uniform_int_distribution<int> uni(0, 1000);
+    // random_device rd;
+    // mt19937 rng(rd());
+    // uniform_int_distribution<int> uni(0, 1000);
     for (int &number : numbers) {
-        number = uni(rng);
+        number = 1;//uni(rng);
     }
     auto chunk_size = DATA_SIZE / worker_count;
     for (auto i = 0; i < worker_count; i++) {
@@ -56,7 +59,7 @@ void calculate_full_sum() {
         COMM_WORLD.Recv(&partial_sums[i], 1, INT, ANY_SOURCE, TAG_PARTIAL_SUM);
     }
     auto total_sum = accumulate(&partial_sums[0], &partial_sums[worker_count], 0,  [](int x, int y) { return x + y;});
-    cout << total_sum << endl;
+    std::cout << "Res : " << total_sum << std::endl;
 }
 
 void calculate_partial_sum() {
