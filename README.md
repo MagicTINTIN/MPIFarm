@@ -11,3 +11,15 @@ You will also need to install Open MPI components like this :
 ```bash
 sudo apt install libopenmpi-dev openmpi-bin
 ```
+
+## Compiling
+To compile, just type:
+```bash
+./compile
+```
+
+## Execute 
+To start the program:
+```bash
+/usr/bin/mpirun -np 2 build/MPIFarm
+```
