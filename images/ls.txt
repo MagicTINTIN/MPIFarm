@@ -1,0 +1,150 @@
+ls -lrt
+
+------ SORTED ------
+
+
+-rw-rw-r-- 1 user user 542413 Sep 18 01:00 95_0001.jpg
+-rw-rw-r-- 1 user user 479610 Sep 18 01:00 14_0002.jpg
+-rw-rw-r-- 1 user user 429456 Sep 18 01:00 20_0003.jpg
+-rw-rw-r-- 1 user user 385053 Sep 18 01:00 01_0004.jpg
+-rw-rw-r-- 1 user user 367336 Sep 18 01:00 21_0005.jpg
+-rw-rw-r-- 1 user user 336764 Sep 18 01:01 16_0006.jpg
+-rw-rw-r-- 1 user user 318933 Sep 18 01:01 42_0007.jpg
+-rw-rw-r-- 1 user user 303341 Sep 18 01:01 64_0008.jpg
+-rw-rw-r-- 1 user user 292162 Sep 18 01:01 70_0009.jpg
+-rw-rw-r-- 1 user user 283179 Sep 18 01:01 67_0010.jpg
+-rw-rw-r-- 1 user user 272568 Sep 18 01:01 23_0011.jpg
+-rw-rw-r-- 1 user user 265806 Sep 18 01:01 34_0012.jpg
+-rw-rw-r-- 1 user user 256239 Sep 18 01:01 86_0013.jpg
+-rw-rw-r-- 1 user user 250456 Sep 18 01:01 44_0014.jpg
+-rw-rw-r-- 1 user user 243923 Sep 18 01:01 11_0015.jpg
+-rw-rw-r-- 1 user user 237695 Sep 18 01:01 04_0016.jpg
+-rw-rw-r-- 1 user user 231204 Sep 18 01:01 78_0017.jpg
+-rw-rw-r-- 1 user user 226581 Sep 18 01:01 89_0018.jpg
+-rw-rw-r-- 1 user user 221043 Sep 18 01:01 80_0019.jpg
+-rw-rw-r-- 1 user user 216000 Sep 18 01:01 07_0020.jpg
+-rw-rw-r-- 1 user user 212271 Sep 18 01:01 56_0021.jpg
+-rw-rw-r-- 1 user user 208670 Sep 18 01:01 82_0022.jpg
+-rw-rw-r-- 1 user user 203737 Sep 18 01:01 29_0023.jpg
+-rw-rw-r-- 1 user user 202549 Sep 18 01:01 62_0024.jpg
+-rw-rw-r-- 1 user user 198200 Sep 18 01:01 52_0025.jpg
+-rw-rw-r-- 1 user user 193641 Sep 18 01:02 17_0026.jpg
+-rw-rw-r-- 1 user user 200905 Sep 18 01:02 59_0027.jpg
+-rw-rw-r-- 1 user user 214435 Sep 18 01:02 18_0028.jpg
+-rw-rw-r-- 1 user user 186140 Sep 18 01:02 66_0029.jpg
+-rw-rw-r-- 1 user user 193746 Sep 18 01:02 63_0030.jpg
+-rw-rw-r-- 1 user user 189383 Sep 18 01:02 79_0031.jpg
+-rw-rw-r-- 1 user user 196834 Sep 18 01:02 43_0032.jpg
+-rw-rw-r-- 1 user user 197906 Sep 18 01:02 36_0033.jpg
+-rw-rw-r-- 1 user user 201469 Sep 18 01:02 08_0034.jpg
+-rw-rw-r-- 1 user user 205169 Sep 18 01:02 69_0035.jpg
+-rw-rw-r-- 1 user user 212565 Sep 18 01:02 60_0036.jpg
+-rw-rw-r-- 1 user user 209805 Sep 18 01:02 54_0037.jpg
+-rw-rw-r-- 1 user user 253368 Sep 18 01:02 96_0038.jpg
+-rw-rw-r-- 1 user user 277692 Sep 18 01:02 12_0039.jpg
+-rw-rw-r-- 1 user user 286532 Sep 18 01:02 85_0040.jpg
+-rw-rw-r-- 1 user user 293555 Sep 18 01:02 51_0041.jpg
+-rw-rw-r-- 1 user user 305772 Sep 18 01:02 22_0042.jpg
+-rw-rw-r-- 1 user user 323383 Sep 18 01:02 09_0043.jpg
+-rw-rw-r-- 1 user user 337733 Sep 18 01:02 98_0044.jpg
+-rw-rw-r-- 1 user user 349075 Sep 18 01:02 15_0045.jpg
+-rw-rw-r-- 1 user user 348874 Sep 18 01:02 33_0046.jpg
+-rw-rw-r-- 1 user user 378401 Sep 18 01:03 81_0047.jpg
+-rw-rw-r-- 1 user user 423339 Sep 18 01:03 77_0048.jpg
+-rw-rw-r-- 1 user user 468123 Sep 18 01:03 24_0049.jpg
+-rw-rw-r-- 1 user user 543558 Sep 18 01:03 88_0050.jpg
+
+
+------ NOT SORTED : OK ------
+
+
+-rw-rw-r-- 1 user user 385053 Sep 18 01:00 ./01_0004.jpg
+-rw-rw-r-- 1 user user 237695 Sep 18 01:01 ./04_0016.jpg
+-rw-rw-r-- 1 user user 216000 Sep 18 01:01 ./07_0020.jpg
+-rw-rw-r-- 1 user user 243923 Sep 18 01:01 ./11_0015.jpg
+-rw-rw-r-- 1 user user 479610 Sep 18 01:00 ./14_0002.jpg
+-rw-rw-r-- 1 user user 336764 Sep 18 01:01 ./16_0006.jpg
+-rw-rw-r-- 1 user user 429456 Sep 18 01:00 ./20_0003.jpg
+-rw-rw-r-- 1 user user 367336 Sep 18 01:00 ./21_0005.jpg
+-rw-rw-r-- 1 user user 272568 Sep 18 01:01 ./23_0011.jpg
+-rw-rw-r-- 1 user user 203737 Sep 18 01:01 ./29_0023.jpg
+-rw-rw-r-- 1 user user 265806 Sep 18 01:01 ./34_0012.jpg
+-rw-rw-r-- 1 user user 318933 Sep 18 01:01 ./42_0007.jpg
+-rw-rw-r-- 1 user user 250456 Sep 18 01:01 ./44_0014.jpg
+-rw-rw-r-- 1 user user 198200 Sep 18 01:01 ./52_0025.jpg
+-rw-rw-r-- 1 user user 212271 Sep 18 01:01 ./56_0021.jpg
+-rw-rw-r-- 1 user user 202549 Sep 18 01:01 ./62_0024.jpg
+-rw-rw-r-- 1 user user 303341 Sep 18 01:01 ./64_0008.jpg
+-rw-rw-r-- 1 user user 283179 Sep 18 01:01 ./67_0010.jpg
+-rw-rw-r-- 1 user user 292162 Sep 18 01:01 ./70_0009.jpg
+-rw-rw-r-- 1 user user 231204 Sep 18 01:01 ./78_0017.jpg
+-rw-rw-r-- 1 user user 221043 Sep 18 01:01 ./80_0019.jpg
+-rw-rw-r-- 1 user user 208670 Sep 18 01:01 ./82_0022.jpg
+-rw-rw-r-- 1 user user 256239 Sep 18 01:01 ./86_0013.jpg
+-rw-rw-r-- 1 user user 226581 Sep 18 01:01 ./89_0018.jpg
+-rw-rw-r-- 1 user user 542413 Sep 18 01:00 ./95_0001.jpg
+
+
+------ NOT SORTED : MIXED ------
+
+
+-rw-rw-r-- 1 user user 237695 Sep 18 01:01 ./04_0016.jpg
+-rw-rw-r-- 1 user user 216000 Sep 18 01:01 ./07_0020.jpg
+-rw-rw-r-- 1 user user 201469 Sep 18 01:02 ./08_0034.jpg
+-rw-rw-r-- 1 user user 243923 Sep 18 01:01 ./11_0015.jpg
+-rw-rw-r-- 1 user user 277692 Sep 18 01:02 ./12_0039.jpg
+-rw-rw-r-- 1 user user 193641 Sep 18 01:02 ./17_0026.jpg
+-rw-rw-r-- 1 user user 214435 Sep 18 01:02 ./18_0028.jpg
+-rw-rw-r-- 1 user user 272568 Sep 18 01:01 ./23_0011.jpg
+-rw-rw-r-- 1 user user 203737 Sep 18 01:01 ./29_0023.jpg
+-rw-rw-r-- 1 user user 265806 Sep 18 01:01 ./34_0012.jpg
+-rw-rw-r-- 1 user user 197906 Sep 18 01:02 ./36_0033.jpg
+-rw-rw-r-- 1 user user 196834 Sep 18 01:02 ./43_0032.jpg
+-rw-rw-r-- 1 user user 250456 Sep 18 01:01 ./44_0014.jpg
+-rw-rw-r-- 1 user user 198200 Sep 18 01:01 ./52_0025.jpg
+-rw-rw-r-- 1 user user 209805 Sep 18 01:02 ./54_0037.jpg
+-rw-rw-r-- 1 user user 212271 Sep 18 01:01 ./56_0021.jpg
+-rw-rw-r-- 1 user user 200905 Sep 18 01:02 ./59_0027.jpg
+-rw-rw-r-- 1 user user 212565 Sep 18 01:02 ./60_0036.jpg
+-rw-rw-r-- 1 user user 202549 Sep 18 01:01 ./62_0024.jpg
+-rw-rw-r-- 1 user user 193746 Sep 18 01:02 ./63_0030.jpg
+-rw-rw-r-- 1 user user 186140 Sep 18 01:02 ./66_0029.jpg
+-rw-rw-r-- 1 user user 283179 Sep 18 01:01 ./67_0010.jpg
+-rw-rw-r-- 1 user user 205169 Sep 18 01:02 ./69_0035.jpg
+-rw-rw-r-- 1 user user 231204 Sep 18 01:01 ./78_0017.jpg
+-rw-rw-r-- 1 user user 189383 Sep 18 01:02 ./79_0031.jpg
+-rw-rw-r-- 1 user user 221043 Sep 18 01:01 ./80_0019.jpg
+-rw-rw-r-- 1 user user 208670 Sep 18 01:01 ./82_0022.jpg
+-rw-rw-r-- 1 user user 256239 Sep 18 01:01 ./86_0013.jpg
+-rw-rw-r-- 1 user user 226581 Sep 18 01:01 ./89_0018.jpg
+-rw-rw-r-- 1 user user 253368 Sep 18 01:02 ./96_0038.jpg
+
+
+------ NOT SORTED : NOT OK ------
+
+
+-rw-rw-r-- 1 user user 201469 Sep 18 01:02 ./08_0034.jpg
+-rw-rw-r-- 1 user user 323383 Sep 18 01:02 ./09_0043.jpg
+-rw-rw-r-- 1 user user 277692 Sep 18 01:02 ./12_0039.jpg
+-rw-rw-r-- 1 user user 349075 Sep 18 01:02 ./15_0045.jpg
+-rw-rw-r-- 1 user user 193641 Sep 18 01:02 ./17_0026.jpg
+-rw-rw-r-- 1 user user 214435 Sep 18 01:02 ./18_0028.jpg
+-rw-rw-r-- 1 user user 305772 Sep 18 01:02 ./22_0042.jpg
+-rw-rw-r-- 1 user user 468123 Sep 18 01:03 ./24_0049.jpg
+-rw-rw-r-- 1 user user 348874 Sep 18 01:02 ./33_0046.jpg
+-rw-rw-r-- 1 user user 197906 Sep 18 01:02 ./36_0033.jpg
+-rw-rw-r-- 1 user user 196834 Sep 18 01:02 ./43_0032.jpg
+-rw-rw-r-- 1 user user 293555 Sep 18 01:02 ./51_0041.jpg
+-rw-rw-r-- 1 user user 209805 Sep 18 01:02 ./54_0037.jpg
+-rw-rw-r-- 1 user user 200905 Sep 18 01:02 ./59_0027.jpg
+-rw-rw-r-- 1 user user 212565 Sep 18 01:02 ./60_0036.jpg
+-rw-rw-r-- 1 user user 193746 Sep 18 01:02 ./63_0030.jpg
+-rw-rw-r-- 1 user user 186140 Sep 18 01:02 ./66_0029.jpg
+-rw-rw-r-- 1 user user 205169 Sep 18 01:02 ./69_0035.jpg
+-rw-rw-r-- 1 user user 423339 Sep 18 01:03 ./77_0048.jpg
+-rw-rw-r-- 1 user user 189383 Sep 18 01:02 ./79_0031.jpg
+-rw-rw-r-- 1 user user 378401 Sep 18 01:03 ./81_0047.jpg
+-rw-rw-r-- 1 user user 286532 Sep 18 01:02 ./85_0040.jpg
+-rw-rw-r-- 1 user user 543558 Sep 18 01:03 ./88_0050.jpg
+-rw-rw-r-- 1 user user 253368 Sep 18 01:02 ./96_0038.jpg
+-rw-rw-r-- 1 user user 337733 Sep 18 01:02 ./98_0044.jpg
