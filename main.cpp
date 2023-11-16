@@ -6,7 +6,7 @@
 #include "imageprocess.h"
 
 using namespace std;
-using namespace MPI;
+// using namespace MPI;
 
 void calculate_full_sum();
 void calculate_partial_sum();
@@ -36,14 +36,28 @@ void worker(DataMonitor &monitor, ResMonitor &res)
 	}
 }
 
-int main() {
-    Init();
-    auto rank = COMM_WORLD.Get_rank();
+int main(int argc, char const *argv[]) {
+
+
+	int* imageSet = nullptr;
+
+    MPI::Init();
+    auto rank = MPI::COMM_WORLD.Get_rank();
+    auto total_processes = MPI::COMM_WORLD.Get_size();
     if (rank == 0) {
-        calculate_full_sum();
-    } else {
-        calculate_partial_sum();
+        auto total_elements = ELEMENTS_PER_PROCESS * total_processes;
+        random_numbers = new double[total_elements];
+        generate_random_numbers(random_numbers, total_elements);
     }
-    Finalize();
+    double random_numbers_chunk[ELEMENTS_PER_PROCESS];
+    COMM_WORLD.Scatter(random_numbers, ELEMENTS_PER_PROCESS, DOUBLE, random_numbers_chunk, ELEMENTS_PER_PROCESS, DOUBLE, 0);
+    double average = get_average(random_numbers_chunk, ELEMENTS_PER_PROCESS);
+    double* averages_of_chunks = nullptr;
+    if (rank == 0) {
+        delete[] random_numbers;
+        averages_of_chunks = new double[total_processes];
+    }
+    COMM_WORLD.Gather(&average, 1, DOUBLE, averages_of_chunks, 1, DOUBLE, 0);
+    MPI::Finalize();
     return 0;
 }
