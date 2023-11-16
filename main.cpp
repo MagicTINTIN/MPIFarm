@@ -4,8 +4,10 @@
 #include <iostream>
 #include "structure.h"
 #include "imageprocess.h"
+#include "includes/nlohmann/json.hpp"
 
-using namespace std;
+using json = nlohmann::json;
+// using namespace std;
 // using namespace MPI;
 
 void calculate_full_sum();
@@ -40,14 +42,14 @@ int main(int argc, char const *argv[])
 {
 	if (argc < 2)
 	{
-		cout << "Please enter json file as argument" << endl
+		std::cout << "Please enter json file as argument" << std::endl
 			 << "For instance : ./main P170B328_ServieresV_L3_small.json" << endl;
 		return 0;
 	}
 	else if (argc > 2)
 	{
-		cout << "Please enter only one json file as argument and optionnaly the number of threads to start as a second argument" << endl
-			 << "For instance : ./main P170B328_ServieresV_L3_small.json" << endl;
+		std::cout << "Please enter only one json file as argument and optionnaly the number of threads to start as a second argument" << endl
+			 << "For instance : ./main P170B328_ServieresV_L3_small.json" << std::endl;
 		return 0;
 	}
 
@@ -58,6 +60,17 @@ int main(int argc, char const *argv[])
 	auto total_processes = MPI::COMM_WORLD.Get_size();
 	if (rank == 0)
 	{
+		std::ifstream f(argv[1]);
+		json jsonArray = json::parse(f);
+
+		int *arr = new int[jsonArray.size()];
+
+		// Convert and copy values from the JSON array to the integer array
+		for (std::size_t i = 0; i < jsonArray.size(); ++i)
+		{
+			arr[i] = jsonArray[i];
+		}
+
 		auto total_elements = ELEMENTS_PER_PROCESS * total_processes;
 		random_numbers = new double[total_elements];
 		generate_random_numbers(random_numbers, total_elements);
