@@ -2,7 +2,7 @@
 #include <string>
 #include <mpi.h>
 #include <random>
-#include <iostream>
+#include <iomanip>
 #include <fstream>
 #include "imageprocess.h"
 #include "includes/nlohmann/json.hpp"
@@ -15,16 +15,20 @@ const int MAIN_PROCESS = 0;
 const int TAG_PARTIAL_ARRAY = 2;
 const int TAG_PARTIAL_SUM = 1;
 
+
 long processImg(std::string &imgPath)
 {
 	return combineColors(averageColorImg(imgPath));
 }
 
-long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb)
+long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb, int &totalSize)
 {
 	std::string printedValue = "Process " + std::to_string(processNb) + " received\n";
+	rgb values(0,0,0);
 	for (size_t i = 0; i < nbImages; i++)
 	{
+		// std::setw(6) << std::setfill('0') << std::right
+		// values += processImg()
 		printedValue += "[" + std::to_string(i) + ":" + std::to_string(imageSet[i]) + "] ";
 	}
 	std::cout << printedValue << std::endl;
@@ -55,7 +59,6 @@ int main(int argc, char const *argv[])
 	std::ifstream f(argv[1]);
 	json jsonArray = json::parse(f);
 
-
 	MPI::Init();
 	int rank = MPI::COMM_WORLD.Get_rank();
 	int totalProcesses = MPI::COMM_WORLD.Get_size();
@@ -75,17 +78,30 @@ int main(int argc, char const *argv[])
 		std::cout << "Getting average color of image sequence: " << imageSet[0] << "-" << imageSet[elementsPerProcess * totalProcesses - 1] << " (" << elementsNotProcessed << " images ignored)" << std::endl;
 	}
 	f.close();
-	
+
 	int partialImageSet[elementsPerProcess];
-	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::LONG, partialImageSet, elementsPerProcess, MPI::LONG, 0);
-	long average = averageMultipleImages(partialImageSet, elementsPerProcess, rank);
+	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::INT, partialImageSet, elementsPerProcess, MPI::INT, 0);
+	long average = averageMultipleImages(partialImageSet, elementsPerProcess, rank, totalElements);
+
 	long *averagesPartsImagesColor = nullptr;
 	if (rank == 0)
 	{
 		delete[] imageSet;
 		averagesPartsImagesColor = new long[totalProcesses];
 	}
+
 	MPI::COMM_WORLD.Gather(&average, 1, MPI::LONG, averagesPartsImagesColor, 1, MPI::LONG, 0);
 	MPI::Finalize();
+
+	if (rank == 0)
+	{
+		for (size_t i = 0; i < totalProcesses; i++)
+		{
+			rgb vals = splitColors(averagesPartsImagesColor[i]);
+			std::cout << "Process n°" << i << " : #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averagesPartsImagesColor[i] << ", R:" << vals.R << " G:" << vals.G << " B:" << vals.B << std::endl;
+		}
+	}
+
+	delete[] averagesPartsImagesColor;
 	return 0;
 }
