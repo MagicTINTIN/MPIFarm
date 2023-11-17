@@ -163,7 +163,7 @@ bool isColorGray(hsv const color)
     return color.S == 0;
 }
 
-rgb splitColors(int const &combinedColors)
+rgb splitColors(long const &combinedColors)
 {
     int red = (combinedColors >> 16) & 0xFF;
     int green = (combinedColors >> 8) & 0xFF;
@@ -171,17 +171,17 @@ rgb splitColors(int const &combinedColors)
     return rgb(red, green, blue);
 }
 
-int combineColors(rgb const &splitColrs)
+long combineColors(rgb const &splitColors)
 {
-    int rgb = splitColrs.R;
-    rgb = (rgb << 8) + splitColrs.G;
-    rgb = (rgb << 8) + splitColrs.B;
+    long rgb = splitColors.R;
+    rgb = (rgb << 8) + splitColors.G;
+    rgb = (rgb << 8) + splitColors.B;
     return rgb;
 }
 
-int combineColors(int const &red, int const &green, int const &blue)
+long combineColors(int const &red, int const &green, int const &blue)
 {
-    int rgb = red;
+    long rgb = red;
     rgb = (rgb << 8) + green;
     rgb = (rgb << 8) + blue;
     return rgb;

@@ -78,4 +78,30 @@ bool isColorGray(rgb const color);
  */
 bool isColorGray(hsv const color);
 
+/**
+ * Splits a long value to rgb values.
+ *
+ * @param combinedColors long
+ * @returns rgb values
+ */
+rgb splitColors(long const &combinedColors);
+
+/**
+ * Combines rgb values to a long value
+ *
+ * @param splitColors rgb values
+ * @returns long value
+ */
+long combineColors(rgb const &splitColors);
+
+/**
+ * Combines rgb values to a long value
+ *
+ * @param red value
+ * @param green value
+ * @param blue value
+ * @returns long value
+ */
+long combineColors(int const &red, int const &green, int const &blue);
+
 #endif // IMAGEPROCESS_H_INCLUDED
