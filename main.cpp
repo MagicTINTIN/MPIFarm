@@ -20,9 +20,9 @@ long processImg(std::string &imgPath)
 	return combineColors(averageColorImg(imgPath));
 }
 
-long averageMultipleImages(int *imageSet, int const &nbImages)
+long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb)
 {
-	std::cout << "Process received" << std::endl;
+	std::cout << "Process " << processNb << " received" << std::endl;
 	for (size_t i = 0; i < nbImages; i++)
 	{
 		std::cout << i << " ";
@@ -52,29 +52,33 @@ int main(int argc, char const *argv[])
 	int elementsNotProcessed(0);
 	int totalElements(0);
 
+	std::ifstream f(argv[1]);
+	json jsonArray = json::parse(f);
+
+
 	MPI::Init();
 	int rank = MPI::COMM_WORLD.Get_rank();
 	int totalProcesses = MPI::COMM_WORLD.Get_size();
+
+	totalElements = jsonArray.size();
+	elementsPerProcess = totalElements / totalProcesses;
+
 	if (rank == 0)
 	{
-		std::ifstream f(argv[1]);
-		json jsonArray = json::parse(f);
-
 		imageSet = new int[jsonArray.size()];
-
 		for (std::size_t i = 0; i < jsonArray.size(); ++i)
 		{
 			imageSet[i] = jsonArray[i];
 		}
 
-		totalElements = jsonArray.size();
-		elementsPerProcess = totalElements / totalProcesses;
 		elementsNotProcessed = totalElements % totalProcesses;
 		std::cout << "Getting average color of image sequence: " << imageSet[0] << "-" << imageSet[elementsPerProcess * totalProcesses - 1] << " (" << elementsNotProcessed << " images ignored)" << std::endl;
 	}
+	f.close();
+	
 	long partialImageSet[elementsPerProcess];
 	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::LONG, partialImageSet, elementsPerProcess, MPI::LONG, 0);
-	long average = averageMultipleImages(imageSet, elementsPerProcess);
+	long average = averageMultipleImages(imageSet, elementsPerProcess, rank);
 	long *averagesPartsImagesColor = nullptr;
 	if (rank == 0)
 	{
