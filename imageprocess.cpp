@@ -20,6 +20,52 @@ void rgb::operator-(const int &v)
     B -= v;
 }
 
+void rgb::operator/(const int &v)
+{
+    R /= v;
+    G /= v;
+    B /= v;
+}
+
+void rgb::operator*(const int &v)
+{
+    R *= v;
+    G *= v;
+    B *= v;
+}
+
+/*rgb rgb::operator+(rgb v, const rgb &n)
+{
+    v.R += n.R;
+    v.G += n.G;
+    v.B += n.B;
+    return v;
+}
+
+rgb rgb::operator-(rgb v, const rgb &n)
+{
+    v.R -= n.R;
+    v.G -= n.G;
+    v.B -= n.B;
+    return v;
+}*/
+
+rgb &rgb::operator+=(const rgb &v)
+{
+    this->R += v.R;
+    this->G += v.G;
+    this->B += v.B;
+    return *this;
+}
+
+rgb &rgb::operator/=(const int &v)
+{
+    this->R /= v;
+    this->G /= v;
+    this->B /= v;
+    return *this;
+}
+
 /**
  * Give the average color (RGB) of an image
  *

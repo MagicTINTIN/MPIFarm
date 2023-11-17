@@ -15,6 +15,14 @@ struct rgb
     }
     void operator+(const int &v);
     void operator-(const int &v);
+    void operator/(const int &v);
+    void operator*(const int &v);
+
+    /*friend rgb operator+(rgb v, const rgb &n);
+    friend rgb operator-(rgb v, const rgb &n);*/
+
+    rgb& operator+=(const rgb& v);
+    rgb& operator/=(const int& v);
 };
 
 struct hsv

@@ -15,9 +15,10 @@ const int MAIN_PROCESS = 0;
 const int TAG_PARTIAL_ARRAY = 2;
 const int TAG_PARTIAL_SUM = 1;
 
-std::string getName(std::string const &name, int const &val, int const &max) {
-	int nb0max = std::floor(std::log10(std::max(1,max)));
-	int nb0val = std::floor(std::log10(std::max(1,val)));
+std::string getName(std::string const &name, int const &val, int const &max)
+{
+	int nb0max = std::floor(std::log10(std::max(1, max)));
+	int nb0val = std::floor(std::log10(std::max(1, val)));
 	std::string output = name;
 	for (size_t i = 0; i < (nb0max - nb0val); i++)
 	{
@@ -27,23 +28,23 @@ std::string getName(std::string const &name, int const &val, int const &max) {
 	return output;
 }
 
-long processImg(std::string &imgPath)
-{
-	return combineColors(averageColorImg(imgPath));
-}
-
 long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb, int const &totalSize, std::string const &prefix)
 {
 	std::string printedValue = "Process " + std::to_string(processNb) + " received\n";
-	rgb values(0,0,0);
+	rgb values(0, 0, 0);
 	for (size_t i = 0; i < nbImages; i++)
 	{
 		std::string filename = getName(prefix, imageSet[i], totalSize);
 		printedValue += filename + " ";
+		// rgb rgbOfImage = averageColorImg(filename);
+		values += averageColorImg(filename);
 	}
 	std::cout << printedValue << std::endl;
 
-	return 0;
+	if (nbImages > 0)
+		values /= nbImages;
+
+	return combineColors(values);
 }
 
 int main(int argc, char const *argv[])
