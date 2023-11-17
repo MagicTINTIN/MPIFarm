@@ -91,7 +91,7 @@ int main(int argc, char const *argv[])
 
 	int partialImageSet[elementsPerProcess];
 	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::INT, partialImageSet, elementsPerProcess, MPI::INT, 0);
-	long average = averageMultipleImages(partialImageSet, elementsPerProcess, rank, totalElements, dataSetJSON["sequenceName"].get<std::string>());
+	long average = averageMultipleImages(partialImageSet, elementsPerProcess, rank, dataSetJSON["maxSize"].get<int>(), dataSetJSON["sequenceName"].get<std::string>());
 
 	long *averagesPartsImagesColor = nullptr;
 	if (rank == 0)
