@@ -30,16 +30,12 @@ std::string getName(std::string const &name, int const &val, int const &max)
 
 long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb, int const &totalSize, std::string const &prefix)
 {
-	std::string printedValue = "Process " + std::to_string(processNb) + " received\n";
 	rgb values(0, 0, 0);
 	for (size_t i = 0; i < nbImages; i++)
 	{
 		std::string filename = getName(prefix, imageSet[i], totalSize);
-		printedValue += filename + " ";
-		// rgb rgbOfImage = averageColorImg(filename);
 		values += averageColorImg(filename);
 	}
-	std::cout << printedValue << std::endl;
 
 	if (nbImages > 0)
 		values /= nbImages;
@@ -87,7 +83,7 @@ int main(int argc, char const *argv[])
 		}
 
 		elementsNotProcessed = totalElements % totalProcesses;
-		std::cout << "Getting average color of image sequence: " << imageSet[0] << "-" << imageSet[elementsPerProcess * totalProcesses - 1] << " (" << elementsNotProcessed << " images ignored)" << std::endl;
+		std::cout << "\nGetting average color of image sequence: " << imageSet[0] << "-" << imageSet[elementsPerProcess * totalProcesses - 1] << " (" << elementsNotProcessed << " images ignored)" << std::endl;
 	}
 
 	int partialImageSet[elementsPerProcess];
@@ -109,7 +105,7 @@ int main(int argc, char const *argv[])
 		for (size_t i = 0; i < totalProcesses; i++)
 		{
 			rgb vals = splitColors(averagesPartsImagesColor[i]);
-			std::cout << "Process n°" << i << " : #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averagesPartsImagesColor[i] << ", R:" << vals.R << " G:" << vals.G << " B:" << vals.B << std::endl;
+			std::cout << "Process n°" << i << " : #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averagesPartsImagesColor[i] << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << vals.R << " G:" << std::setw(3) << vals.G << " B:" << std::setw(3) << vals.B << std::endl;
 		}
 	}
 
