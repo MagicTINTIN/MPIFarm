@@ -22,12 +22,12 @@ long processImg(std::string &imgPath)
 
 long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb)
 {
-	std::cout << "Process " << processNb << " received" << std::endl;
+	std::string printedValue = "Process " + std::to_string(processNb) + " received\n";
 	for (size_t i = 0; i < nbImages; i++)
 	{
-		std::cout << i << " ";
+		printedValue += "[" + std::to_string(i) + ":" + std::to_string(imageSet[i]) + "] ";
 	}
-	std::cout << std::endl;
+	std::cout << printedValue << std::endl;
 
 	return 0;
 }
@@ -76,9 +76,9 @@ int main(int argc, char const *argv[])
 	}
 	f.close();
 	
-	long partialImageSet[elementsPerProcess];
+	int partialImageSet[elementsPerProcess];
 	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::LONG, partialImageSet, elementsPerProcess, MPI::LONG, 0);
-	long average = averageMultipleImages(imageSet, elementsPerProcess, rank);
+	long average = averageMultipleImages(partialImageSet, elementsPerProcess, rank);
 	long *averagesPartsImagesColor = nullptr;
 	if (rank == 0)
 	{

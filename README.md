@@ -31,6 +31,10 @@ ssh -X user@remote_machine
 # and/or
 xauth generate :0 . trusted # or :1, check echo $DISPLAY
 ```
+If it is still here but cause no problem, just hide it with:
+```bash
+mpirun -hostfile hostfile -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json 2>/dev/null
+```
 
 To compile and execute some tests, use
 ```bash
