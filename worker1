@@ -1,0 +1,5 @@
+127.0.0.1       localhost
+
+# MPI CLUSTER SETUP
+192.168.1.195   manager
+192.168.1.224   worker
