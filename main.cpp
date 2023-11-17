@@ -4,7 +4,6 @@
 #include <random>
 #include <iostream>
 #include <fstream>
-#include "structure.h"
 #include "imageprocess.h"
 #include "includes/nlohmann/json.hpp"
 
@@ -12,36 +11,24 @@ using json = nlohmann::json;
 // using namespace std;
 // using namespace MPI;
 
-void calculate_full_sum();
-void calculate_partial_sum();
-
 const int MAIN_PROCESS = 0;
 const int TAG_PARTIAL_ARRAY = 2;
 const int TAG_PARTIAL_SUM = 1;
 
-void processImg(imageStruct &img, ResMonitor &res)
+long processImg(std::string &imgPath)
 {
-	if (isImgGray(img.path))
-	{
-		rgb tmp = averageColorImg(img.path);
-		img.averageValue = tmp.R;
-		res.addItem(img);
-	}
+	return combineColors(averageColorImg(imgPath));
 }
 
-void worker(DataMonitor &monitor, ResMonitor &res)
+long averageMultipleImages(int *imageSet, int const &nbImages)
 {
-	imageStruct img;
-	img = monitor.removeItem();
-	while (img != END_WORKERS)
+	std::cout << "Process received" << std::endl;
+	for (size_t i = 0; i < nbImages; i++)
 	{
-		processImg(img, res);
-		img = monitor.removeItem();
+		std::cout << i << " ";
 	}
-}
+	std::cout << std::endl;
 
-int getAverageColor(int *imageSet, int const nbImages)
-{
 	return 0;
 }
 
@@ -62,7 +49,7 @@ int main(int argc, char const *argv[])
 
 	int *imageSet = nullptr;
 	int elementsPerProcess(0);
-	int elementsLastProcess(0);
+	int elementsNotProcessed(0);
 	int totalElements(0);
 
 	MPI::Init();
@@ -82,18 +69,19 @@ int main(int argc, char const *argv[])
 
 		totalElements = jsonArray.size();
 		elementsPerProcess = totalElements / totalProcesses;
-		elementsLastProcess = totalElements % totalProcesses;
+		elementsNotProcessed = totalElements % totalProcesses;
+		std::cout << "Getting average color of image sequence: " << imageSet[0] << "-" << imageSet[elementsPerProcess * totalProcesses - 1] << " (" << elementsNotProcessed << " images ignored)" << std::endl;
 	}
-	double partialImageSet[elementsPerProcess];
-	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::DOUBLE, partialImageSet, elementsPerProcess, MPI::DOUBLE, 0);
-	double average = getAverageColor(imageSet, elementsPerProcess);
-	double *averagesPartsImagesColor = nullptr;
+	long partialImageSet[elementsPerProcess];
+	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::LONG, partialImageSet, elementsPerProcess, MPI::LONG, 0);
+	long average = averageMultipleImages(imageSet, elementsPerProcess);
+	long *averagesPartsImagesColor = nullptr;
 	if (rank == 0)
 	{
 		delete[] imageSet;
-		averagesPartsImagesColor = new double[totalProcesses];
+		averagesPartsImagesColor = new long[totalProcesses];
 	}
-	MPI::COMM_WORLD.Gather(&average, 1, MPI::DOUBLE, averagesPartsImagesColor, 1, MPI::DOUBLE, 0);
+	MPI::COMM_WORLD.Gather(&average, 1, MPI::LONG, averagesPartsImagesColor, 1, MPI::LONG, 0);
 	MPI::Finalize();
 	return 0;
 }

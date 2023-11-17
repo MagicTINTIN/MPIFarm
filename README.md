@@ -21,9 +21,9 @@ To compile, just type:
 ## Execute 
 To start the program:
 ```bash
-/usr/bin/mpirun -np 2 build/MPIFarm
+/usr/bin/mpirun -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
 # or
-mpirun -hostfile hostfile -np 6 build/MPIFarm 
+mpirun -hostfile hostfile -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
 ```
 If you have an `Invalid MIT-MAGIC-COOKIE-1 key6533927` error : 
 ```bash
