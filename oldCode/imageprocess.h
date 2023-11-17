@@ -79,3 +79,9 @@ bool isColorGray(rgb const color);
 bool isColorGray(hsv const color);
 
 #endif // IMAGEPROCESS_H_INCLUDED
+
+rgb splitColors(int const &combinedColors);
+
+int combineColors(rgb const &splitColrs);
+
+int combineColors(int const &red, int const &green, int const &blue);

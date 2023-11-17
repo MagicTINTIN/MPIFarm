@@ -84,7 +84,7 @@ hsv rgbToHsv(rgb const color)
     hsv val;
     float f6(6.);
     float R(color.R / 255.f), G(color.G / 255.f), B(color.B / 255.f);
-    //std::cout << R << " " << G << " " << B << std::endl;
+    // std::cout << R << " " << G << " " << B << std::endl;
     float xmax = std::max(R, std::max(G, B)),
           xmin = std::min(R, std::min(G, B));
     float chroma = xmax - xmin;
@@ -161,4 +161,28 @@ bool isColorGray(rgb const color)
 bool isColorGray(hsv const color)
 {
     return color.S == 0;
+}
+
+rgb splitColors(int const &combinedColors)
+{
+    int red = (combinedColors >> 16) & 0xFF;
+    int green = (combinedColors >> 8) & 0xFF;
+    int blue = combinedColors & 0xFF;
+    return rgb(red, green, blue);
+}
+
+int combineColors(rgb const &splitColrs)
+{
+    int rgb = splitColrs.R;
+    rgb = (rgb << 8) + splitColrs.G;
+    rgb = (rgb << 8) + splitColrs.B;
+    return rgb;
+}
+
+int combineColors(int const &red, int const &green, int const &blue)
+{
+    int rgb = red;
+    rgb = (rgb << 8) + green;
+    rgb = (rgb << 8) + blue;
+    return rgb;
 }
