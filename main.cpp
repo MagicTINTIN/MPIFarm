@@ -81,8 +81,8 @@ int main(int argc, char const *argv[])
 		}
 
 		totalElements = jsonArray.size();
-		elementsPerProcess = totalElements / (totalProcesses - 1);
-		elementsLastProcess = totalElements % (totalProcesses - 1);
+		elementsPerProcess = totalElements / totalProcesses;
+		elementsLastProcess = totalElements % totalProcesses;
 	}
 	double partialImageSet[elementsPerProcess];
 	MPI::COMM_WORLD.Scatter(imageSet, elementsPerProcess, MPI::DOUBLE, partialImageSet, elementsPerProcess, MPI::DOUBLE, 0);

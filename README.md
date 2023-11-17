@@ -31,3 +31,9 @@ ssh -X user@remote_machine
 # and/or
 xauth generate :0 . trusted # or :1, check echo $DISPLAY
 ```
+
+To compile and execute some tests, use
+```bash
+mpicxx -o scatterTest.o scatterTest.cpp
+mpiexec -hostfile hostfile -np 5 ./scatterTest.o
+```
