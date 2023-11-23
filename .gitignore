@@ -20,3 +20,23 @@ debug/*
 */LaTeX/Parts/Annexes.aux
 
 */LaTeX/*.pyg
+
+
+LaTeX/*.fdb_latexmk
+LaTeX/*.fls
+LaTeX/*.log
+#LaTeX/*.pdf
+LaTeX/*.synctex.gz
+LaTeX/*.aux
+
+LaTeX/*.toc
+LaTeX/*.stc*
+LaTeX/*.maf
+LaTeX/*.mtc*
+LaTeX/*.bbl
+LaTeX/*.blg
+LaTeX/*.synctex
+
+LaTeX/Parts/Annexes.aux
+
+LaTeX/*.pyg
