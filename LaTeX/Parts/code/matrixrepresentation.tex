@@ -1,0 +1,19 @@
+\begin{lstlisting}[language=Python, style=jupycolors]
+A4=np.matrix([[3.0 , 7.0,  1.0,  3.0],
+              [1.0, -6.0,  6.0,  8.0],
+              [4.0,  4.0, -7.0,  1.0],
+              [4.0,  16.0,  2.0, 0.0]])
+
+b1=(np.matrix([40,
+               19,
+               36,
+               48])).transpose()
+
+A = A4
+b = b4
+
+nbeq=(np.shape(A))[0]   # number of equations
+nbsol=(np.shape(b))[1]  # number of solutions
+
+expA=np.hstack((A,b))  # expanding matrix
+\end{lstlisting}

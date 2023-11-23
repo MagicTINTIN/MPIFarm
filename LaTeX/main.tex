@@ -1,0 +1,62 @@
+\documentclass[a4paper,11pt,twoside]{article} 
+%\documentclass{article}
+
+\input{head.tex}
+
+%\usepackage[french]{babel}
+
+% resolve no citation problem
+%\nocite{*}
+%\usepackage[...,backend=bibtex]{biblatex}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+%%%%%\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+
+%\input{preferences/listings-glsl.prf}
+% optionally set GLSL as default language
+%\input{preferences/glsl.tex}
+\input{preferences/py.tex}
+\lstset{language=Python}
+\lstset{style=jupycolors}
+
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+
+\usepackage{setspace}
+\usepackage{titletoc}
+%\usepackage[T1]{fontenc}
+%\usepackage{amsfonts}
+%\usepackage{graphicx}
+\usepackage{mathtools}
+\graphicspath{ {images/} }
+
+%\input{hautdepage.tex}
+%\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+
+\begin{document}
+\dosecttoc{} % generate TOC
+%\maketitle
+\clearpage
+
+\setcounter{page}{1}
+\title{Numerical methods and Algorithms Engineering Project 2 report}
+\author{E7650 (Task 4) Valentin SERVIERES P170B115 }
+\date{}
+\maketitle
+
+For this Engineering project, we will be using these libraries from python.
+\input{Parts/code/imports.tex}
+\input{Parts/part1.tex}
+\input{Parts/part2.tex}
+\input{Parts/part3.tex}
+
+\end{document}
+
+
+                        

@@ -1,0 +1,44 @@
+\def\beginlstdelim#1#2#3%
+{%
+    \def\endlstdelim{#2\egroup}%
+    \ttfamily#1\bgroup\color{#3}\aftergroup\endlstdelim%
+}
+
+
+\lstdefinestyle{jupycolors}
+{
+    basicstyle={\small\sffamily},
+    numberstyle=\tiny\color{gray},
+    tabsize=3,
+    breaklines=true,
+    breakatwhitespace=true,
+    numbers=left,
+    frame=l,
+    language = python,
+    commentstyle = {\color{pycyan}},
+    stringstyle = {\color{pyred}},
+    keywordstyle = {\color{pygreen}\bfseries},
+    keywordstyle = [2]{\color{pygreen}},
+    keywordstyle = [3]{\color{pymagenta}},
+    keywordstyle = [4]{\color{pymagenta}},
+    otherkeywords = {;,<<,>>,++},
+    morekeywords = [2]{;},
+    morekeywords = [3]{<<, >>},
+    morekeywords = [4]{++},
+    procnamekeys={def, np.},
+    % morekeywords ={>,<,;,-,+,*,/,!,=,~},
+    % morekeywords= [5]{>,<,;,-,+,*,/,!,=,~},
+    % keywordstyle=[5]\color{magenta},
+    literate=*
+        {+}{{\textcolor{magenta}{+}}}1
+        {-}{{\textcolor{magenta}{-}}}1
+        {/}{{\textcolor{magenta}{/}}}1
+        {*}{{\textcolor{magenta}{*}}}1
+        {<}{{\textcolor{magenta}{<}}}1
+        {>}{{\textcolor{magenta}{>}}}1
+        {!}{{\textcolor{magenta}{!}}}1
+        {=}{{\textcolor{magenta}{=}}}1,
+    procnamestyle=\color{pyblue},
+    showstringspaces=false,
+    % moredelim = *[is][{\beginlstdelim{np.}{(}{pyblue}}]{np.}{(},
+}

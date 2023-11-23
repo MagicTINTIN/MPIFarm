@@ -1,0 +1,29 @@
+\begin{lstlisting}[language=Python, style=jupycolors]
+def fnleq(x):
+    return np.array( [x[1]*np.sin(0.5*x[0])-0.1, 
+                      x[0]**2+(0.25*x[1])**4-12])
+
+def quasidfi(f, i, x, j):
+    h = 1e-6
+    xh = []
+    for k in range(len(x)):
+        if k == i:
+            xh.append(x[k] + h)
+        else:
+            xh.append(x[k])
+    y = f(x)[j]
+    yh = f(xh)[j]
+    r = (yh - y) / h
+    #print("r :", r)
+    return r
+        
+
+def Jf(fct, x, nbeq):
+    multigrad = []
+    for f in range(nbeq):
+        grad = []
+        for i in range(len(x)):
+            grad.append(quasidfi(fct, i, x, f))
+        multigrad.append(grad)
+    return np.array(multigrad)
+\end{lstlisting}

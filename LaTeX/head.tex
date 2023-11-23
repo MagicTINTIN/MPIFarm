@@ -1,0 +1,40 @@
+
+\author{Valentin SERVIERES}
+\pdfminorversion=7 % To use charte graphique (pdf 1.7)
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lscape}
+\usepackage{subcaption, boldline,multirow,tabularx,colortbl,makecell,fancybox,amsfonts,amssymb,amsmath,mathrsfs,array, svg}
+\usepackage{pgf,tikz,xcolor,graphicx}
+\usetikzlibrary{calc,positioning,shapes.geometric,shapes.symbols,shapes.misc, fit, shapes, arrows, arrows.meta,fadings,through}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{hyperref,titlesec,eurosym,eso-pic,float}
+
+\usepackage[english]{babel}
+%\usepackage{bibleref} ajouté par moi mais flemme
+% minted et les encars de code en gros
+%\usepackage[newfloat]{minted}
+\usepackage{caption}
+\usepackage{tcolorbox}
+%\newenvironment{code}{\captionsetup{type=listing}}{}
+%\SetupFloatingEnvironment{listing}{name=Code Source}
+\tcbuselibrary{skins, breakable}
+\input{preferences/jupyterOutput.tex}
+
+% table des annexes
+\usepackage{minitoc}
+\usepackage{pdfpages}
+
+\input{colors.tex}
+
+% bibliographie
+%\usepackage{biblatex}
+%\usepackage{csquotes}
+%\addbibresource{bibliography.bib}
+
+% for code embed but prefer lstlisting
+%\usepackage{minted}
+%\usepackage{listings}
+\usepackage[procnames]{listings}
+
+\DeclareMathOperator*{\Max}{max}

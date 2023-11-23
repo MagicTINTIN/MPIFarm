@@ -1,0 +1,11 @@
+\begin{lstlisting}[language=Python, style=jupycolors]
+def swapLines(A, i, n):
+    # print("swiping line:", i)
+    maxCoef=max(abs(A[i:n,i]));
+    imax=abs(A[i:n,i]).argmax()
+    if abs(maxCoef) > 0:
+        A[[i,i+imax],:]=A[[i+imax,i],:] # switching lines with the one which  has the maximum value
+        return [1, A]
+    else:
+        return [0, A]
+\end{lstlisting}

@@ -1,0 +1,23 @@
+\begin{lstlisting}[language=Python, style=jupycolors]
+def objectiveFunctDistanceImportance(positionsFixed, positionsFree):
+    distanceVal = 0
+    importanceVal = 0
+    avgDist = averageDistanceBetweenAllPoints(positionsFixed, positionsFree)
+    
+    # distance value
+    for i in range(0, len(positionsFixed)):
+        for j in range(0, len(positionsFree)):
+            edgeDistance = distanceBetweenTwoPoints(positionsFixed[i], positionsFree[j])
+            distanceVal += (avgDist - edgeDistance)**2
+
+    for i in range(0, len(positionsFree)):
+        for j in range(i+1, len(positionsFree)):
+            edgeDistance =  distanceBetweenTwoPoints(positionsFree[i], positionsFree[j])
+            distanceVal += (avgDist - edgeDistance)**2
+
+    # point value
+    for i in range(0, len(positionsFree)):
+        importanceVal += 1-float(get_normalized_value_at_coordinates(geo_data_merged, positionsFree[i, 0], positionsFree[i, 1]))
+    
+    return distanceVal + importanceVal
+\end{lstlisting}

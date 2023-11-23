@@ -1,0 +1,12 @@
+\begin{lstlisting}[language=Python, style=jupycolors]
+def quasiGradient(positionsGiven, positionsNew, objectiveFunction, h=0.01):
+    f0 = objectiveFunction(positionsGiven, positionsNew)
+    df = positionsNew * 0
+    for i in range(0, len(positionsNew)):
+        for j in range (0, 2): # x and y coordinates
+            positionsFreeNew = positionsFree; 
+            positionsFreeNew[i][j] += h
+            f1 = objectiveFunction(positionsGiven, positionsFreeNew) #changed from positionsFixed
+            df[i][j] = (f1-f0)/h
+    return df
+\end{lstlisting}

@@ -1,0 +1,15 @@
+\begin{lstlisting}[language=Python, style=jupycolors]
+def QuasiNewton(f, x, eps):
+    maxsteps = 2000
+    step = 0
+    while (step < maxsteps and np.any(abs(f(x)) > eps)):
+        step += 1
+        #print("xi : ", x)
+        #print("s: ", step, " | Jf : ", Jf(f, x, 2))
+        jxtmp = Jf(f, x, 2)
+        jxl = jxtmp.tolist()
+        if np.abs(jxl[0][0]) < .001 and np.abs(jxl[0][1]) < .001 and np.abs(jxl[1][1]) < .001 and np.abs(jxl[1][0]) < .001 :
+            return False, step
+        x = np.array(x) - np.linalg.inv(jxtmp)@f(x)
+    return x, step
+\end{lstlisting}
