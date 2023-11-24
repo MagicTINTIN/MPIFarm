@@ -18,6 +18,51 @@ To compile, just type:
 ./compile
 ```
 
+## Configure
+
+### On master/local computer
+
+#### Generate SSH Key Pair
+```bash
+ssh-keygen -t rsa -b 4096
+```
+> it might be created in `~/.ssh/id_rsa`
+
+#### Copy Public Key to the Remote Machine
+```bash
+ssh-copy-id username@remote-machine
+```
+> it might be copied in `~/.ssh/authorized_keys`
+
+### On remote machine
+
+#### Modify SSH Configuration (if necessary)
+
+```bash
+sudo nvim /etc/ssh/sshd_config
+```
+You can also use `nano`` instead of nvim :p
+
+```
+PubkeyAuthentication yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+```
+
+```bash
+sudo systemctl restart ssh
+```
+
+#### Start SSH Agent for the User
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+
+### Enjoy !
+Now, you should be able to connect in ssh to the distant machine without password.
+
 ## Execute 
 To start the program:
 ```bash
