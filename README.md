@@ -5,17 +5,23 @@ Is a project of render farm working with Open MPI.
 Open MPI is only available on Linux.<br>
 You will need to install C++ compiler and cmake.
 ```bash
+# Debian/Ubuntu
 sudo apt install g++ cmake
+# Arch Linux
+sudo pacman -Sy g++ cmake
 ```
-You will also need to install Open MPI components like this : 
+You will also need to install Open MPI and OpenCV components like this : 
 ```bash
-sudo apt install libopenmpi-dev openmpi-bin
+# Debian/Ubuntu
+sudo apt install libopenmpi-dev openmpi-bin libopencv-dev
+# Arch Linux
+sudo pacman -Sy openmpi opencv vtk
 ```
 
 ## Compiling
 To compile, just type:
 ```bash
-./compile
+./cmakecompile
 ```
 
 ## Configure
@@ -53,7 +59,7 @@ ChallengeResponseAuthentication no
 sudo systemctl restart ssh
 ```
 
-#### Start SSH Agent for the User
+#### Start SSH Agent for the User (optionnal ?)
 
 ```bash
 eval "$(ssh-agent -s)"
