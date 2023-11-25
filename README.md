@@ -8,7 +8,7 @@ You will need to install C++ compiler and cmake.
 # Debian/Ubuntu
 sudo apt install g++ cmake
 # Arch Linux
-sudo pacman -Sy g++ cmake
+sudo pacman -Sy gcc cmake
 ```
 You will also need to install Open MPI and OpenCV components like this : 
 ```bash
@@ -47,7 +47,7 @@ ssh-copy-id username@remote-machine
 ```bash
 sudo nvim /etc/ssh/sshd_config
 ```
-You can also use `nano`` instead of nvim :p
+You can also use `nano` instead of nvim :p
 
 ```
 PubkeyAuthentication yes
@@ -56,7 +56,10 @@ ChallengeResponseAuthentication no
 ```
 
 ```bash
+# Debian/Ubuntu
 sudo systemctl restart ssh
+# Arch Linux
+sudo systemctl restart sshd
 ```
 
 #### Start SSH Agent for the User (optionnal ?)
