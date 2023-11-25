@@ -30,6 +30,10 @@ std::string getName(std::string const &name, int const &val, int const &max)
 
 long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb, int const &totalSize, std::string const &prefix)
 {
+	std::ofstream exportFlux("export", std::ios::app);
+    exportFlux << "Process nb " << processNb << std::endl;
+	exportFlux.close();
+	
 	rgb values(0, 0, 0);
 	for (size_t i = 0; i < nbImages; i++)
 	{
