@@ -105,12 +105,22 @@ int main(int argc, char const *argv[])
 
 	if (rank == 0)
 	{
+		rgb values(0, 0, 0);
+
 		stopTime = MPI::Wtime();
 		for (size_t i = 0; i < totalProcesses; i++)
 		{
+
 			rgb vals = splitColors(averagesPartsImagesColor[i]);
 			std::cout << "Process n°" << i << " : #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averagesPartsImagesColor[i] << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << vals.R << " G:" << std::setw(3) << vals.G << " B:" << std::setw(3) << vals.B << std::endl;
+
+			values += vals;
 		}
+		if (totalProcesses > 0)
+			values /= totalProcesses;
+		long averageHex = combineColors(values);
+		std::cout << "Global average color: #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averageHex << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << values.R << " G:" << std::setw(3) << values.G << " B:" << std::setw(3) << values.B << std::endl;
+
 		std::cout << "Time elapsed: " << stopTime - startTime << "s" << std::endl;
 	}
 
