@@ -3,12 +3,12 @@ Is a project of render farm working with Open MPI.
 
 ## Requirements
 Open MPI is only available on Linux.<br>
-You will need to install C++ compiler and cmake.
+You will need to install C++ compiler and cmake (and OpenSSH server if you plan to create a cluster).
 ```bash
 # Debian/Ubuntu
-sudo apt install g++ cmake
+sudo apt install g++ cmake (optional openssh-server)
 # Arch Linux
-sudo pacman -Sy gcc cmake
+sudo pacman -Sy gcc cmake (optional ssh)
 ```
 You will also need to install Open MPI and OpenCV components like this : 
 ```bash

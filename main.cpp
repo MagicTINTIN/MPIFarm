@@ -71,6 +71,8 @@ int main(int argc, char const *argv[])
 	int rank = MPI::COMM_WORLD.Get_rank();
 	int totalProcesses = MPI::COMM_WORLD.Get_size();
 
+	double startTime, stopTime;
+
 	totalElements = dataSetJSON["sequenceNumbers"].size();
 	elementsPerProcess = totalElements / totalProcesses;
 
@@ -84,6 +86,7 @@ int main(int argc, char const *argv[])
 
 		elementsNotProcessed = totalElements % totalProcesses;
 		std::cout << "\nGetting average color of image sequence: " << imageSet[0] << "-" << imageSet[elementsPerProcess * totalProcesses - 1] << " (" << elementsNotProcessed << " images ignored)" << std::endl;
+		startTime = MPI::Wtime();
 	}
 
 	int partialImageSet[elementsPerProcess];
@@ -102,11 +105,13 @@ int main(int argc, char const *argv[])
 
 	if (rank == 0)
 	{
+		stopTime = MPI::Wtime();
 		for (size_t i = 0; i < totalProcesses; i++)
 		{
 			rgb vals = splitColors(averagesPartsImagesColor[i]);
 			std::cout << "Process n°" << i << " : #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averagesPartsImagesColor[i] << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << vals.R << " G:" << std::setw(3) << vals.G << " B:" << std::setw(3) << vals.B << std::endl;
 		}
+		std::cout << "Time elapsed: " << stopTime - startTime << "s" << std::endl;
 	}
 
 	delete[] averagesPartsImagesColor;
