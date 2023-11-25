@@ -1,6 +1,6 @@
 127.0.0.1       localhost
 
 # MPI CLUSTER SETUP
-192.168.1.195   manager
+192.168.1.195   manager slot=4
 192.168.1.127   worker1
 192.168.1.224   worker2
