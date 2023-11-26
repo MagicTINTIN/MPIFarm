@@ -14,9 +14,9 @@ rm benchmarkfull.csv 2>/dev/null
 
 # SETTINGS
 
-nbRepetitions=4
-maxProcesses=6
-clusterSize="single" #mega by default
+nbRepetitions=6
+maxProcesses=24
+clusterSize="mega" #mega by default
 
 fill_character="#"
 
@@ -72,20 +72,20 @@ setLabels=(
     "2500 images"
 )
 
-imageSets=(
-    "imageSets/P170B328_ServieresV_L3_smallest.json"
-    "imageSets/P170B328_ServieresV_L3_xxsmall.json"
-)
+# imageSets=(
+#     "imageSets/P170B328_ServieresV_L3_smallest.json"
+#     "imageSets/P170B328_ServieresV_L3_xxsmall.json"
+# )
 
-setSizes=(
-    1
-    19
-)
+# setSizes=(
+#     1
+#     19
+# )
 
-setLabels=(
-    "1 images (9px)"
-    "19 images (9px)"
-)
+# setLabels=(
+#     "1 images (9px)"
+#     "19 images (9px)"
+# )
 
 totalSets=0
 for imageSet in "${imageSets[@]}"; do
@@ -94,8 +94,8 @@ for imageSet in "${imageSets[@]}"; do
 done
 
 # PREPARING CSV FILE
-echo -ne "nbProcesses" >>benchmark.csv
-echo -ne "nbProcesses" >>benchmarkfull.csv
+echo -ne "\"Number of processes\"" >>benchmark.csv
+echo -ne "\"Number of processes\"" >>benchmarkfull.csv
 for label in "${setLabels[@]}"; do
     for ((repNb = 1; repNb < $nbRepetitions + 1; repNb++)); do
         echo -ne ",\"$label - round $repNb\"" >>benchmarkfull.csv
