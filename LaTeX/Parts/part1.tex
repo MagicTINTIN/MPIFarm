@@ -1,25 +1,12 @@
 \section{Task analysis}
 
-\begin{figure}[htbp]
-    \begin{minipage}{0.5\textwidth}
-      \centering
-      \input{Parts/code/examplespart1eq1.tex}
-    \end{minipage}%
-    \begin{minipage}{0.5\textwidth}
-      \centering
-      $$\begin{bmatrix}
-        3 & 7  & 1 & 3 &\bigm| 40 \\
-        1 & -6 & 6 & 8 &\bigm| 19 \\
-        4 & 4 & -7 & 1 &\bigm| 36 \\
-        4 & 16 & 2 & 0 &\bigm| 48 \\
-      \end{bmatrix}$$
-    \end{minipage}
-    \caption{Caption to change}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=14cm]{images/lineq1.png}
-  \caption{Results from WolframAlpha}
-  \label{fig:lineq1}
-\end{figure}
+\subsection{Problem being solved}
+We have a sequence of images, it could be images from a movie in production. We want to have the average color of that image sequence.\\
+It can be useful to know what color leads the image and then apply colorimetry correction on it.\\
+In movie production, we might need with high resolution images, and a lot of images. So we need to get these calculations to be quick. However, computers have limited performences.\\
+Thus, we can use cluster of computers to divide the work among several computers.\\
+\subsection{How concurrency is used}
+This is where our data concurrency is used. We give to each core of the processor of each computer on the network a list of images to process in order to get their average color.\\
+\subsection{Language/tools used}
+The language used is \textbf{C++} in order to get the best performences. The data concurrency is done using \textbf{MPI}.\\
+The MPI tools used are \textbf{Scatter} to distribute the work to all computers and \textbf{Gather} to get the average values back.

@@ -43,6 +43,7 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 			std::string filename = getName(prefix, imageSet[i], totalSize);
 			values += averageColorImg(filename);
 			imagesProcessed++;
+			std::cout << " " << values.R << " " << values.G << " " << values.B << std::endl;
 		}
 	}
 
@@ -51,6 +52,7 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 	else
 		return -1;
 
+	// return std::min(combineColors(values), (long) 0xffffff);
 	return combineColors(values);
 }
 
@@ -92,7 +94,8 @@ int main(int argc, char const *argv[])
 	elementsPerProcess = totalElements / totalProcesses;
 	elementsNotProcessed = totalElements % totalProcesses;
 	totalWithFakeElements = (elementsNotProcessed > 0) ? totalProcesses * (elementsPerProcess + 1) : totalProcesses * elementsPerProcess;
-	if (elementsNotProcessed > 0) elementsPerProcess++;
+	if (elementsNotProcessed > 0)
+		elementsPerProcess++;
 	fakeElements = totalWithFakeElements - totalElements;
 
 	std::ofstream exportFlux("/home/user/Documents/filefromMPIFarm", std::ios::app);
