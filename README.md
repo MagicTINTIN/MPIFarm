@@ -72,12 +72,30 @@ ssh-add ~/.ssh/id_rsa
 ### Enjoy !
 Now, you should be able to connect in ssh to the distant machine without password.
 
-## Execute 
+## Define set of images
+You can define set of images using jsonGenerator.
+### Compile it
+```bash
+./jsonCompileGenerator.sh
+```
+### Then execute it
+```bash
+./jsonGenerator.o
+```
+And then choose your settings.
+
+## Execute
+### Using start.sh
+```
+./start single|mega|custom your_image_set.json [optionnal: number_of_processes_to_spawn]
+```
+
+### Manually
 To start the program:
 ```bash
 /usr/bin/mpirun -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
 # or
-mpirun -hostfile hostfile -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
+mpirun -hostfile h_hostfile.cfg -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
 ```
 If you have an `Invalid MIT-MAGIC-COOKIE-1 key6533927` error : 
 ```bash
@@ -87,11 +105,11 @@ xauth generate :0 . trusted # or :1, check echo $DISPLAY
 ```
 If it is still here but cause no problem, just hide it with:
 ```bash
-mpirun -hostfile hostfile -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json 2>/dev/null
+mpirun -hostfile h_hostfile.cfg -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json 2>/dev/null
 ```
 
 To compile and execute some tests, use
 ```bash
-mpicxx -o scatterTest.o scatterTest.cpp
-mpiexec -hostfile hostfile -np 5 ./scatterTest.o
+mpicxx -o test.o test.cpp
+mpiexec -hostfile hostfile -np 5 ./test.o
 ```
