@@ -24,12 +24,12 @@ else
     exit 1
 fi
 
-if [[ $# == 3 ]]; then
+if [[ $# -ge 3 ]]; then
     processToSpawn=$3
 fi
 
 benchmarkarg=""
-if [[ $# == 4 && $4 == "--benchmark" ]]; then
+if [[ $# -ge 4 && $4 == "--benchmark" ]]; then
     benchmarkarg=$4
 fi
 

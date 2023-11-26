@@ -34,7 +34,7 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 {
 	// std::cout << processNb << " is currently in " << fs::current_path() << std::endl;
 	// std::ofstream exportFlux("/home/user/Documents/filefromMPIFarm", std::ios::app);
-    // exportFlux << "Process nb " << processNb << " is currently in " << fs::current_path() << std::endl;
+	// exportFlux << "Process nb " << processNb << " is currently in " << fs::current_path() << std::endl;
 	// exportFlux.close();
 
 	rgb values(0, 0, 0);
@@ -54,14 +54,14 @@ int main(int argc, char const *argv[])
 {
 	if (argc < 2)
 	{
-		std::cout << "Please enter json file as argument" << std::endl
-				  << "For instance : ./main P170B328_ServieresV_L3_small.json" << std::endl;
+		std::cout << "\nPlease enter json file as argument" << std::endl
+				  << "For instance : build/MPIFarm P170B328_ServieresV_L3_small.json" << std::endl;
 		return 0;
 	}
-	else if (argc > 2)
+	else if (argc > 3)
 	{
-		std::cout << "Please enter only one json file as argument and optionnaly the number of threads to start as a second argument" << std::endl
-				  << "For instance : ./main P170B328_ServieresV_L3_small.json" << std::endl;
+		std::cout << "\nPlease enter only one json file as argument and optionnaly --benchmark as second argument" << std::endl
+				  << "For instance : build/MPIFarm P170B328_ServieresV_L3_small.json" << std::endl;
 		return 0;
 	}
 
@@ -73,6 +73,10 @@ int main(int argc, char const *argv[])
 	std::ifstream f(argv[1]);
 	json dataSetJSON = json::parse(f);
 	f.close();
+
+	bool benchmark = false;
+	if (argc == 3 && std::string(argv[2]) == "--benchmark")
+		benchmark = true;
 
 	MPI::Init();
 	int rank = MPI::COMM_WORLD.Get_rank();
@@ -129,6 +133,13 @@ int main(int argc, char const *argv[])
 		std::cout << "Global average color: #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averageHex << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << values.R << " G:" << std::setw(3) << values.G << " B:" << std::setw(3) << values.B << std::endl;
 
 		std::cout << "Time elapsed: " << stopTime - startTime << "s" << std::endl;
+
+		if (benchmark)
+		{
+			std::ofstream exportFlux("benchmark.csv", std::ios::app);
+			exportFlux << totalProcesses << "," << stopTime - startTime << std::endl;
+			exportFlux.close();
+		}
 	}
 
 	delete[] averagesPartsImagesColor;
