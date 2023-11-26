@@ -95,6 +95,10 @@ int main(int argc, char const *argv[])
 	if (elementsNotProcessed > 0) elementsPerProcess++;
 	fakeElements = totalWithFakeElements - totalElements;
 
+	std::ofstream exportFlux("/home/user/Documents/filefromMPIFarm", std::ios::app);
+	exportFlux << MPI::Wtime() << ": Process " << rank << " spawned here." << std::endl;
+	exportFlux.close();
+
 	if (rank == 0)
 	{
 		imageSet = new int[totalWithFakeElements];
