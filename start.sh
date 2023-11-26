@@ -1,4 +1,4 @@
-if [ $# != 2 && $# != 3 ]; then
+if [[ $# != 2 && $# != 3 && $# != 4 ]]; then
 
     echo -ne "$(tput setaf 9)"
     echo "ERROR: ./start.sh requires 2 arguments : cluster_type set_of_images.json"
@@ -28,7 +28,14 @@ if [[ $# == 3 ]]; then
     processToSpawn=$3
 fi
 
+benchmarkarg=""
+if [[ $# == 4 && $4 == "--benchmark" ]]; then
+    benchmarkarg=$4
+fi
+
 echo -ne "$(tput setaf 2)"
 echo "Starting $1 ($processToSpawn processes)"
+echo -ne "$(tput setaf 3)"
+echo "> mpirun -hostfile h_$1.cfg -np $processToSpawn build/MPIFarm $2 $benchmarkarg"
 echo -ne "$(tput sgr0)"
-mpirun -hostfile h_$1.cfg -np build/MPIFarm $processToSpawn $2
+mpirun -hostfile h_$1.cfg -np $processToSpawn build/MPIFarm $2 $benchmarkarg
