@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 #include <mpi.h>
-#include <random>
 #include <iomanip>
 #include <fstream>
 #include <filesystem>
@@ -9,7 +9,7 @@
 #include "includes/nlohmann/json.hpp"
 
 using json = nlohmann::json;
-namespace fs = std::filesystem;
+// namespace fs = std::filesystem;
 // using namespace std;
 // using namespace MPI;
 
