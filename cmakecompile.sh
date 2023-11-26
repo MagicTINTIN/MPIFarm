@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 projectName="MPIFarm"
 
-mkdir build
-mkdir debug
+mkdir build 2> /dev/null
+mkdir debug 2> /dev/null
 
 makearg=""
 cmakearg=""

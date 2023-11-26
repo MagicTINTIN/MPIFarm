@@ -1,0 +1,1 @@
+{"rule":"EN_A_VS_AN","sentence":"^\\QIf you have an \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q error :\\E$"}
