@@ -156,7 +156,7 @@ int main(int argc, char const *argv[])
 		if (benchmark)
 		{
 			std::ofstream exportFlux("timeSession");
-			exportFlux << stopTime - startTime << std::endl;
+			exportFlux << stopTime - startTime;
 			exportFlux.close();
 		}
 	}

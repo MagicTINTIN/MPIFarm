@@ -1,0 +1,276 @@
+
+
+
+STARTING NEW BENCHMARK
+Sun, 26 Nov 2023 18:59:14 +0200
+########################################
+
+18:59:14: 1/6 Processes - Set 1/2 | Run 1/30 - 3% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:15: 1/6 Processes - Set 1/2 | Run 2/30 - 6% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:15: 1/6 Processes - Set 1/2 | Run 3/30 - 10% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:16: 1/6 Processes - Set 1/2 | Run 4/30 - 13% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:17: 1/6 Processes - Set 2/2 | Run 5/30 - 16% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:17: 1/6 Processes - Set 2/2 | Run 6/30 - 20% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:18: 1/6 Processes - Set 2/2 | Run 7/30 - 23% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:19: 1/6 Processes - Set 2/2 | Run 8/30 - 26% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:19: 2/6 Processes - Set 1/2 | Run 9/30 - 30% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:20: 2/6 Processes - Set 1/2 | Run 10/30 - 33% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:21: 2/6 Processes - Set 1/2 | Run 11/30 - 36% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:21: 2/6 Processes - Set 1/2 | Run 12/30 - 40% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:22: 2/6 Processes - Set 2/2 | Run 13/30 - 43% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:23: 2/6 Processes - Set 2/2 | Run 14/30 - 46% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:23: 2/6 Processes - Set 2/2 | Run 15/30 - 50% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:24: 2/6 Processes - Set 2/2 | Run 16/30 - 53% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:25: 3/6 Processes - Set 1/2 | Run 17/30 - 56% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:25: 3/6 Processes - Set 1/2 | Run 18/30 - 60% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:26: 3/6 Processes - Set 1/2 | Run 19/30 - 63% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:27: 3/6 Processes - Set 1/2 | Run 20/30 - 66% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:27: 3/6 Processes - Set 2/2 | Run 21/30 - 70% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:28: 3/6 Processes - Set 2/2 | Run 22/30 - 73% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:29: 3/6 Processes - Set 2/2 | Run 23/30 - 76% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:29: 3/6 Processes - Set 2/2 | Run 24/30 - 80% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:30: 4/6 Processes - Set 1/2 | Run 25/30 - 83% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:31: 4/6 Processes - Set 1/2 | Run 26/30 - 86% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:31: 4/6 Processes - Set 1/2 | Run 27/30 - 90% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:32: 4/6 Processes - Set 1/2 | Run 28/30 - 93% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:33: 4/6 Processes - Set 2/2 | Run 29/30 - 96% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:33: 4/6 Processes - Set 2/2 | Run 30/30 - 100% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:34: 4/6 Processes - Set 2/2 | Run 31/30 - 103% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:35: 4/6 Processes - Set 2/2 | Run 32/30 - 106% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:36: 5/6 Processes - Set 1/2 | Run 33/30 - 110% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:36: 5/6 Processes - Set 1/2 | Run 34/30 - 113% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:37: 5/6 Processes - Set 1/2 | Run 35/30 - 116% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:38: 5/6 Processes - Set 1/2 | Run 36/30 - 120% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:39: 5/6 Processes - Set 2/2 | Run 37/30 - 123% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:39: 5/6 Processes - Set 2/2 | Run 38/30 - 126% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:40: 5/6 Processes - Set 2/2 | Run 39/30 - 130% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:41: 5/6 Processes - Set 2/2 | Run 40/30 - 133% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:42: 6/6 Processes - Set 1/2 | Run 41/30 - 136% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:42: 6/6 Processes - Set 1/2 | Run 42/30 - 140% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:43: 6/6 Processes - Set 1/2 | Run 43/30 - 143% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:44: 6/6 Processes - Set 1/2 | Run 44/30 - 146% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:44: 6/6 Processes - Set 2/2 | Run 45/30 - 150% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:45: 6/6 Processes - Set 2/2 | Run 46/30 - 153% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:46: 6/6 Processes - Set 2/2 | Run 47/30 - 156% : 
+Invalid MIT-MAGIC-COOKIE-1 key18:59:47: 6/6 Processes - Set 2/2 | Run 48/30 - 160% : 
+Invalid MIT-MAGIC-COOKIE-1 key
+
+
+STARTING NEW BENCHMARK
+Sun, 26 Nov 2023 19:02:20 +0200
+########################################
+
+19:02:20: 1/6 Processes - Set 1/2 (rep 1/4) | Run 1/40 - 2% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:21: 1/6 Processes - Set 1/2 (rep 2/4) | Run 2/40 - 5% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:21: 1/6 Processes - Set 1/2 (rep 3/4) | Run 3/40 - 7% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:22: 1/6 Processes - Set 1/2 (rep 4/4) | Run 4/40 - 10% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:23: 1/6 Processes - Set 2/2 (rep 1/4) | Run 5/40 - 12% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:23: 1/6 Processes - Set 2/2 (rep 2/4) | Run 6/40 - 15% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:24: 1/6 Processes - Set 2/2 (rep 3/4) | Run 7/40 - 17% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:25: 1/6 Processes - Set 2/2 (rep 4/4) | Run 8/40 - 20% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:25: 2/6 Processes - Set 1/2 (rep 1/4) | Run 9/40 - 22% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:26: 2/6 Processes - Set 1/2 (rep 2/4) | Run 10/40 - 25% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:27: 2/6 Processes - Set 1/2 (rep 3/4) | Run 11/40 - 27% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:27: 2/6 Processes - Set 1/2 (rep 4/4) | Run 12/40 - 30% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:28: 2/6 Processes - Set 2/2 (rep 1/4) | Run 13/40 - 32% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:29: 2/6 Processes - Set 2/2 (rep 2/4) | Run 14/40 - 35% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:29: 2/6 Processes - Set 2/2 (rep 3/4) | Run 15/40 - 37% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:30: 2/6 Processes - Set 2/2 (rep 4/4) | Run 16/40 - 40% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:31: 3/6 Processes - Set 1/2 (rep 1/4) | Run 17/40 - 42% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:31: 3/6 Processes - Set 1/2 (rep 2/4) | Run 18/40 - 45% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:32: 3/6 Processes - Set 1/2 (rep 3/4) | Run 19/40 - 47% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:33: 3/6 Processes - Set 1/2 (rep 4/4) | Run 20/40 - 50% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:33: 3/6 Processes - Set 2/2 (rep 1/4) | Run 21/40 - 52% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:34: 3/6 Processes - Set 2/2 (rep 2/4) | Run 22/40 - 55% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:35: 3/6 Processes - Set 2/2 (rep 3/4) | Run 23/40 - 57% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:35: 3/6 Processes - Set 2/2 (rep 4/4) | Run 24/40 - 60% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:36: 4/6 Processes - Set 1/2 (rep 1/4) | Run 25/40 - 62% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:37: 4/6 Processes - Set 1/2 (rep 2/4) | Run 26/40 - 65% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:37: 4/6 Processes - Set 1/2 (rep 3/4) | Run 27/40 - 67% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:38: 4/6 Processes - Set 1/2 (rep 4/4) | Run 28/40 - 70% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:39: 4/6 Processes - Set 2/2 (rep 1/4) | Run 29/40 - 72% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:40: 4/6 Processes - Set 2/2 (rep 2/4) | Run 30/40 - 75% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:40: 4/6 Processes - Set 2/2 (rep 3/4) | Run 31/40 - 77% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:41: 4/6 Processes - Set 2/2 (rep 4/4) | Run 32/40 - 80% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:42: 5/6 Processes - Set 1/2 (rep 1/4) | Run 33/40 - 82% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:42: 5/6 Processes - Set 1/2 (rep 2/4) | Run 34/40 - 85% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:43: 5/6 Processes - Set 1/2 (rep 3/4) | Run 35/40 - 87% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:44: 5/6 Processes - Set 1/2 (rep 4/4) | Run 36/40 - 90% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:45: 5/6 Processes - Set 2/2 (rep 1/4) | Run 37/40 - 92% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:45: 5/6 Processes - Set 2/2 (rep 2/4) | Run 38/40 - 95% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:46: 5/6 Processes - Set 2/2 (rep 3/4) | Run 39/40 - 97% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:47: 5/6 Processes - Set 2/2 (rep 4/4) | Run 40/40 - 100% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:48: 6/6 Processes - Set 1/2 (rep 1/4) | Run 41/40 - 102% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:48: 6/6 Processes - Set 1/2 (rep 2/4) | Run 42/40 - 105% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:49: 6/6 Processes - Set 1/2 (rep 3/4) | Run 43/40 - 107% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:50: 6/6 Processes - Set 1/2 (rep 4/4) | Run 44/40 - 110% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:50: 6/6 Processes - Set 2/2 (rep 1/4) | Run 45/40 - 112% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:51: 6/6 Processes - Set 2/2 (rep 2/4) | Run 46/40 - 115% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:52: 6/6 Processes - Set 2/2 (rep 3/4) | Run 47/40 - 117% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:02:52: 6/6 Processes - Set 2/2 (rep 4/4) | Run 48/40 - 120% : 
+Invalid MIT-MAGIC-COOKIE-1 key
+
+
+STARTING NEW BENCHMARK
+Sun, 26 Nov 2023 19:04:38 +0200
+########################################
+
+19:04:38: 1/6 Processes - Set 1/2 (rep 1/4) | Run 1/48 - 2% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:38: 1/6 Processes - Set 1/2 (rep 2/4) | Run 2/48 - 4% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:39: 1/6 Processes - Set 1/2 (rep 3/4) | Run 3/48 - 6% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:40: 1/6 Processes - Set 1/2 (rep 4/4) | Run 4/48 - 8% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:40: 1/6 Processes - Set 2/2 (rep 1/4) | Run 5/48 - 10% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:41: 1/6 Processes - Set 2/2 (rep 2/4) | Run 6/48 - 12% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:42: 1/6 Processes - Set 2/2 (rep 3/4) | Run 7/48 - 14% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:42: 1/6 Processes - Set 2/2 (rep 4/4) | Run 8/48 - 16% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:43: 2/6 Processes - Set 1/2 (rep 1/4) | Run 9/48 - 18% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:43: 2/6 Processes - Set 1/2 (rep 2/4) | Run 10/48 - 20% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:44: 2/6 Processes - Set 1/2 (rep 3/4) | Run 11/48 - 22% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:45: 2/6 Processes - Set 1/2 (rep 4/4) | Run 12/48 - 25% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:45: 2/6 Processes - Set 2/2 (rep 1/4) | Run 13/48 - 27% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:46: 2/6 Processes - Set 2/2 (rep 2/4) | Run 14/48 - 29% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:47: 2/6 Processes - Set 2/2 (rep 3/4) | Run 15/48 - 31% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:48: 2/6 Processes - Set 2/2 (rep 4/4) | Run 16/48 - 33% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:48: 3/6 Processes - Set 1/2 (rep 1/4) | Run 17/48 - 35% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:49: 3/6 Processes - Set 1/2 (rep 2/4) | Run 18/48 - 37% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:50: 3/6 Processes - Set 1/2 (rep 3/4) | Run 19/48 - 39% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:50: 3/6 Processes - Set 1/2 (rep 4/4) | Run 20/48 - 41% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:51: 3/6 Processes - Set 2/2 (rep 1/4) | Run 21/48 - 43% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:52: 3/6 Processes - Set 2/2 (rep 2/4) | Run 22/48 - 45% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:53: 3/6 Processes - Set 2/2 (rep 3/4) | Run 23/48 - 47% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:53: 3/6 Processes - Set 2/2 (rep 4/4) | Run 24/48 - 50% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:54: 4/6 Processes - Set 1/2 (rep 1/4) | Run 25/48 - 52% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:55: 4/6 Processes - Set 1/2 (rep 2/4) | Run 26/48 - 54% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:55: 4/6 Processes - Set 1/2 (rep 3/4) | Run 27/48 - 56% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:56: 4/6 Processes - Set 1/2 (rep 4/4) | Run 28/48 - 58% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:57: 4/6 Processes - Set 2/2 (rep 1/4) | Run 29/48 - 60% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:57: 4/6 Processes - Set 2/2 (rep 2/4) | Run 30/48 - 62% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:58: 4/6 Processes - Set 2/2 (rep 3/4) | Run 31/48 - 64% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:59: 4/6 Processes - Set 2/2 (rep 4/4) | Run 32/48 - 66% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:04:59: 5/6 Processes - Set 1/2 (rep 1/4) | Run 33/48 - 68% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:00: 5/6 Processes - Set 1/2 (rep 2/4) | Run 34/48 - 70% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:01: 5/6 Processes - Set 1/2 (rep 3/4) | Run 35/48 - 72% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:01: 5/6 Processes - Set 1/2 (rep 4/4) | Run 36/48 - 75% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:02: 5/6 Processes - Set 2/2 (rep 1/4) | Run 37/48 - 77% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:03: 5/6 Processes - Set 2/2 (rep 2/4) | Run 38/48 - 79% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:04: 5/6 Processes - Set 2/2 (rep 3/4) | Run 39/48 - 81% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:04: 5/6 Processes - Set 2/2 (rep 4/4) | Run 40/48 - 83% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:05: 6/6 Processes - Set 1/2 (rep 1/4) | Run 41/48 - 85% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:06: 6/6 Processes - Set 1/2 (rep 2/4) | Run 42/48 - 87% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:06: 6/6 Processes - Set 1/2 (rep 3/4) | Run 43/48 - 89% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:07: 6/6 Processes - Set 1/2 (rep 4/4) | Run 44/48 - 91% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:08: 6/6 Processes - Set 2/2 (rep 1/4) | Run 45/48 - 93% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:09: 6/6 Processes - Set 2/2 (rep 2/4) | Run 46/48 - 95% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:09: 6/6 Processes - Set 2/2 (rep 3/4) | Run 47/48 - 97% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:05:10: 6/6 Processes - Set 2/2 (rep 4/4) | Run 48/48 - 100% : 
+Invalid MIT-MAGIC-COOKIE-1 key
+
+
+STARTING NEW BENCHMARK
+Sun, 26 Nov 2023 19:10:12 +0200
+########################################
+
+19:10:12: 1/6 Processes - Set 1/2 (rep 1/4) | Run 1/48 - 2% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:13: 1/6 Processes - Set 1/2 (rep 2/4) | Run 2/48 - 4% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:14: 1/6 Processes - Set 1/2 (rep 3/4) | Run 3/48 - 6% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:14: 1/6 Processes - Set 1/2 (rep 4/4) | Run 4/48 - 8% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:15: 1/6 Processes - Set 2/2 (rep 1/4) | Run 5/48 - 10% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:16: 1/6 Processes - Set 2/2 (rep 2/4) | Run 6/48 - 12% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:16: 1/6 Processes - Set 2/2 (rep 3/4) | Run 7/48 - 14% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:17: 1/6 Processes - Set 2/2 (rep 4/4) | Run 8/48 - 16% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:18: 2/6 Processes - Set 1/2 (rep 1/4) | Run 9/48 - 18% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:18: 2/6 Processes - Set 1/2 (rep 2/4) | Run 10/48 - 20% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:19: 2/6 Processes - Set 1/2 (rep 3/4) | Run 11/48 - 22% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:20: 2/6 Processes - Set 1/2 (rep 4/4) | Run 12/48 - 25% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:20: 2/6 Processes - Set 2/2 (rep 1/4) | Run 13/48 - 27% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:21: 2/6 Processes - Set 2/2 (rep 2/4) | Run 14/48 - 29% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:22: 2/6 Processes - Set 2/2 (rep 3/4) | Run 15/48 - 31% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:22: 2/6 Processes - Set 2/2 (rep 4/4) | Run 16/48 - 33% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:23: 3/6 Processes - Set 1/2 (rep 1/4) | Run 17/48 - 35% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:24: 3/6 Processes - Set 1/2 (rep 2/4) | Run 18/48 - 37% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:24: 3/6 Processes - Set 1/2 (rep 3/4) | Run 19/48 - 39% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:25: 3/6 Processes - Set 1/2 (rep 4/4) | Run 20/48 - 41% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:26: 3/6 Processes - Set 2/2 (rep 1/4) | Run 21/48 - 43% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:27: 3/6 Processes - Set 2/2 (rep 2/4) | Run 22/48 - 45% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:27: 3/6 Processes - Set 2/2 (rep 3/4) | Run 23/48 - 47% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:28: 3/6 Processes - Set 2/2 (rep 4/4) | Run 24/48 - 50% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:29: 4/6 Processes - Set 1/2 (rep 1/4) | Run 25/48 - 52% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:29: 4/6 Processes - Set 1/2 (rep 2/4) | Run 26/48 - 54% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:30: 4/6 Processes - Set 1/2 (rep 3/4) | Run 27/48 - 56% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:31: 4/6 Processes - Set 1/2 (rep 4/4) | Run 28/48 - 58% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:31: 4/6 Processes - Set 2/2 (rep 1/4) | Run 29/48 - 60% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:32: 4/6 Processes - Set 2/2 (rep 2/4) | Run 30/48 - 62% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:33: 4/6 Processes - Set 2/2 (rep 3/4) | Run 31/48 - 64% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:33: 4/6 Processes - Set 2/2 (rep 4/4) | Run 32/48 - 66% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:34: 5/6 Processes - Set 1/2 (rep 1/4) | Run 33/48 - 68% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:35: 5/6 Processes - Set 1/2 (rep 2/4) | Run 34/48 - 70% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:36: 5/6 Processes - Set 1/2 (rep 3/4) | Run 35/48 - 72% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:36: 5/6 Processes - Set 1/2 (rep 4/4) | Run 36/48 - 75% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:37: 5/6 Processes - Set 2/2 (rep 1/4) | Run 37/48 - 77% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:38: 5/6 Processes - Set 2/2 (rep 2/4) | Run 38/48 - 79% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:38: 5/6 Processes - Set 2/2 (rep 3/4) | Run 39/48 - 81% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:39: 5/6 Processes - Set 2/2 (rep 4/4) | Run 40/48 - 83% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:40: 6/6 Processes - Set 1/2 (rep 1/4) | Run 41/48 - 85% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:40: 6/6 Processes - Set 1/2 (rep 2/4) | Run 42/48 - 87% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:41: 6/6 Processes - Set 1/2 (rep 3/4) | Run 43/48 - 89% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:42: 6/6 Processes - Set 1/2 (rep 4/4) | Run 44/48 - 91% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:43: 6/6 Processes - Set 2/2 (rep 1/4) | Run 45/48 - 93% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:43: 6/6 Processes - Set 2/2 (rep 2/4) | Run 46/48 - 95% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:44: 6/6 Processes - Set 2/2 (rep 3/4) | Run 47/48 - 97% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:10:45: 6/6 Processes - Set 2/2 (rep 4/4) | Run 48/48 - 100% : 
+Invalid MIT-MAGIC-COOKIE-1 key
+
+
+STARTING NEW BENCHMARK
+Sun, 26 Nov 2023 19:19:00 +0200
+########################################
+
+19:19:00: 1/6 Processes - Set 1/2 (rep 1/4) | Run 1/48 - 2% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:01: 1/6 Processes - Set 1/2 (rep 2/4) | Run 2/48 - 4% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:02: 1/6 Processes - Set 1/2 (rep 3/4) | Run 3/48 - 6% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:02: 1/6 Processes - Set 1/2 (rep 4/4) | Run 4/48 - 8% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:03: 1/6 Processes - Set 2/2 (rep 1/4) | Run 5/48 - 10% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:03: 1/6 Processes - Set 2/2 (rep 2/4) | Run 6/48 - 12% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:04: 1/6 Processes - Set 2/2 (rep 3/4) | Run 7/48 - 14% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:05: 1/6 Processes - Set 2/2 (rep 4/4) | Run 8/48 - 16% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:05: 2/6 Processes - Set 1/2 (rep 1/4) | Run 9/48 - 18% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:06: 2/6 Processes - Set 1/2 (rep 2/4) | Run 10/48 - 20% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:07: 2/6 Processes - Set 1/2 (rep 3/4) | Run 11/48 - 22% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:07: 2/6 Processes - Set 1/2 (rep 4/4) | Run 12/48 - 25% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:08: 2/6 Processes - Set 2/2 (rep 1/4) | Run 13/48 - 27% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:09: 2/6 Processes - Set 2/2 (rep 2/4) | Run 14/48 - 29% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:09: 2/6 Processes - Set 2/2 (rep 3/4) | Run 15/48 - 31% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:10: 2/6 Processes - Set 2/2 (rep 4/4) | Run 16/48 - 33% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:10: 3/6 Processes - Set 1/2 (rep 1/4) | Run 17/48 - 35% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:11: 3/6 Processes - Set 1/2 (rep 2/4) | Run 18/48 - 37% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:12: 3/6 Processes - Set 1/2 (rep 3/4) | Run 19/48 - 39% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:13: 3/6 Processes - Set 1/2 (rep 4/4) | Run 20/48 - 41% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:13: 3/6 Processes - Set 2/2 (rep 1/4) | Run 21/48 - 43% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:14: 3/6 Processes - Set 2/2 (rep 2/4) | Run 22/48 - 45% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:15: 3/6 Processes - Set 2/2 (rep 3/4) | Run 23/48 - 47% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:15: 3/6 Processes - Set 2/2 (rep 4/4) | Run 24/48 - 50% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:16: 4/6 Processes - Set 1/2 (rep 1/4) | Run 25/48 - 52% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:17: 4/6 Processes - Set 1/2 (rep 2/4) | Run 26/48 - 54% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:17: 4/6 Processes - Set 1/2 (rep 3/4) | Run 27/48 - 56% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:18: 4/6 Processes - Set 1/2 (rep 4/4) | Run 28/48 - 58% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:19: 4/6 Processes - Set 2/2 (rep 1/4) | Run 29/48 - 60% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:19: 4/6 Processes - Set 2/2 (rep 2/4) | Run 30/48 - 62% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:20: 4/6 Processes - Set 2/2 (rep 3/4) | Run 31/48 - 64% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:21: 4/6 Processes - Set 2/2 (rep 4/4) | Run 32/48 - 66% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:21: 5/6 Processes - Set 1/2 (rep 1/4) | Run 33/48 - 68% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:22: 5/6 Processes - Set 1/2 (rep 2/4) | Run 34/48 - 70% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:23: 5/6 Processes - Set 1/2 (rep 3/4) | Run 35/48 - 72% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:24: 5/6 Processes - Set 1/2 (rep 4/4) | Run 36/48 - 75% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:24: 5/6 Processes - Set 2/2 (rep 1/4) | Run 37/48 - 77% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:25: 5/6 Processes - Set 2/2 (rep 2/4) | Run 38/48 - 79% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:26: 5/6 Processes - Set 2/2 (rep 3/4) | Run 39/48 - 81% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:27: 5/6 Processes - Set 2/2 (rep 4/4) | Run 40/48 - 83% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:27: 6/6 Processes - Set 1/2 (rep 1/4) | Run 41/48 - 85% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:28: 6/6 Processes - Set 1/2 (rep 2/4) | Run 42/48 - 87% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:29: 6/6 Processes - Set 1/2 (rep 3/4) | Run 43/48 - 89% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:29: 6/6 Processes - Set 1/2 (rep 4/4) | Run 44/48 - 91% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:30: 6/6 Processes - Set 2/2 (rep 1/4) | Run 45/48 - 93% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:31: 6/6 Processes - Set 2/2 (rep 2/4) | Run 46/48 - 95% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:32: 6/6 Processes - Set 2/2 (rep 3/4) | Run 47/48 - 97% : 
+Invalid MIT-MAGIC-COOKIE-1 key19:19:33: 6/6 Processes - Set 2/2 (rep 4/4) | Run 48/48 - 100% : 
+Invalid MIT-MAGIC-COOKIE-1 key
