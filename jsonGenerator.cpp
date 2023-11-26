@@ -4,16 +4,16 @@
 #include <fstream>
 #include <cmath>
 
-std::string getName(std::string const &name, int const &val, int const &max)
+std::string getName(int const &val, int const &max)
 {
     int nb0max = std::floor(std::log10(std::max(1, max)));
     int nb0val = std::floor(std::log10(std::max(1, val)));
-    std::string output = name;
+    std::string output = "";
     for (size_t i = 0; i < (nb0max - nb0val); i++)
     {
         output += "0";
     }
-    output += std::to_string(val) + ".jpg";
+    output += std::to_string(val);
     return output;
 }
 
@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
     std::cout << "Last image number of the sequence: ";
     std::cin >> end;
 
-    std::ofstream exportFlux(fileNameBase + std::to_string(begin) + ((end == begin) ? ".json" : "-" + std::to_string(end) + ".json"), std::ios::app);
+    std::ofstream exportFlux(fileNameBase + getName(begin, maxSize) + ((end == begin) ? ".json" : "-" + getName(end, maxSize) + ".json"), std::ios::app);
 
     exportFlux << "{" << std::endl
     << "    \"sequenceName\": \"" << sequenceName << "\","  << std::endl
