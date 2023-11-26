@@ -21,7 +21,7 @@ sudo pacman -Sy openmpi opencv vtk
 ## Compiling
 To compile, just type:
 ```bash
-./cmakecompile
+./cmakecompile [optionnal: --release]
 ```
 
 ## Configure
