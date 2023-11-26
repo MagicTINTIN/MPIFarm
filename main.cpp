@@ -9,9 +9,6 @@
 #include "includes/nlohmann/json.hpp"
 
 using json = nlohmann::json;
-// namespace fs = std::filesystem;
-// using namespace std;
-// using namespace MPI;
 
 const int MAIN_PROCESS = 0;
 const int TAG_PARTIAL_ARRAY = 2;
@@ -38,14 +35,23 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 	// exportFlux.close();
 
 	rgb values(0, 0, 0);
+	int imagesProcessed(0);
 	for (size_t i = 0; i < nbImages; i++)
 	{
-		std::string filename = getName(prefix, imageSet[i], totalSize);
-		values += averageColorImg(filename);
+		std::cout << "Process " << processNb << ": " << imageSet[i] << std::endl;
+		if (imageSet[i] != -1)
+		{
+			std::string filename = getName(prefix, imageSet[i], totalSize);
+			values += averageColorImg(filename);
+			imagesProcessed++;
+		}
 	}
 
-	if (nbImages > 0)
-		values /= nbImages;
+	std::cout << "Process " << processNb << " processed " << imagesProcessed << std::endl;
+	if (imagesProcessed > 0)
+		values /= imagesProcessed;
+	else
+		return -1;
 
 	return combineColors(values);
 }
@@ -68,7 +74,7 @@ int main(int argc, char const *argv[])
 	int *imageSet = nullptr;
 	int elementsPerProcess(0);
 	int elementsNotProcessed(0);
-	int totalElements(0);
+	int totalElements(0), fakeElements(0), totalWithFakeElements(0);
 
 	std::ifstream f(argv[1]);
 	json dataSetJSON = json::parse(f);
@@ -86,17 +92,29 @@ int main(int argc, char const *argv[])
 
 	totalElements = dataSetJSON["sequenceNumbers"].size();
 	elementsPerProcess = totalElements / totalProcesses;
+	elementsNotProcessed = totalElements % totalProcesses;
+	totalWithFakeElements = (elementsNotProcessed > 0) ? totalProcesses * (elementsPerProcess + 1) : totalProcesses * elementsPerProcess;
+	if (elementsNotProcessed > 0) elementsPerProcess++;
+	fakeElements = totalWithFakeElements - totalElements;
 
 	if (rank == 0)
 	{
-		imageSet = new int[dataSetJSON["sequenceNumbers"].size()];
-		for (std::size_t i = 0; i < dataSetJSON["sequenceNumbers"].size(); ++i)
+		imageSet = new int[totalWithFakeElements];
+		for (size_t i = 0; i < totalElements; ++i)
 		{
 			imageSet[i] = dataSetJSON["sequenceNumbers"][i];
 		}
+		for (size_t i = totalElements; i < totalElements + fakeElements; i++)
+		{
+			imageSet[i] = -1;
+		}
+		std::cout << "\n" << totalElements << " " << elementsNotProcessed << " | " << fakeElements << "\nArr: ";
+		for (size_t i = 0; i < totalWithFakeElements; i++)
+		{
+			std::cout << imageSet[i] << " ";
+		}
 
-		elementsNotProcessed = totalElements % totalProcesses;
-		std::cout << "\nGetting average color of image sequence: " << imageSet[0] << "-" << imageSet[elementsPerProcess * totalProcesses - 1] << " (" << elementsNotProcessed << " images ignored)" << std::endl;
+		std::cout << "\nGetting average color of image sequence: " << imageSet[0] << "-" << imageSet[totalElements - 1] << std::endl;
 		startTime = MPI::Wtime();
 	}
 
@@ -119,18 +137,22 @@ int main(int argc, char const *argv[])
 		rgb values(0, 0, 0);
 
 		stopTime = MPI::Wtime();
+		int receivedProcesses(0);
 		for (size_t i = 0; i < totalProcesses; i++)
 		{
+			if (averagesPartsImagesColor[i] != -1)
+			{
+				rgb vals = splitColors(averagesPartsImagesColor[i]);
+				std::cout << "Process n°" << i << " : #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averagesPartsImagesColor[i] << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << vals.R << " G:" << std::setw(3) << vals.G << " B:" << std::setw(3) << vals.B << std::endl;
 
-			rgb vals = splitColors(averagesPartsImagesColor[i]);
-			std::cout << "Process n°" << i << " : #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averagesPartsImagesColor[i] << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << vals.R << " G:" << std::setw(3) << vals.G << " B:" << std::setw(3) << vals.B << std::endl;
-
-			values += vals;
+				values += vals;
+				receivedProcesses++;
+			}
 		}
-		if (totalProcesses > 0)
-			values /= totalProcesses;
+		if (receivedProcesses > 0)
+			values /= receivedProcesses;
 		long averageHex = combineColors(values);
-		std::cout << "Global average color: #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averageHex << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << values.R << " G:" << std::setw(3) << values.G << " B:" << std::setw(3) << values.B << std::endl;
+		std::cout << receivedProcesses << " - Global average color: #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averageHex << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << values.R << " G:" << std::setw(3) << values.G << " B:" << std::setw(3) << values.B << std::endl;
 
 		std::cout << "Time elapsed: " << stopTime - startTime << "s" << std::endl;
 
