@@ -38,7 +38,6 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 	int imagesProcessed(0);
 	for (size_t i = 0; i < nbImages; i++)
 	{
-		std::cout << "Process " << processNb << ": " << imageSet[i] << std::endl;
 		if (imageSet[i] != -1)
 		{
 			std::string filename = getName(prefix, imageSet[i], totalSize);
@@ -47,7 +46,6 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 		}
 	}
 
-	std::cout << "Process " << processNb << " processed " << imagesProcessed << std::endl;
 	if (imagesProcessed > 0)
 		values /= imagesProcessed;
 	else
@@ -108,11 +106,6 @@ int main(int argc, char const *argv[])
 		{
 			imageSet[i] = -1;
 		}
-		std::cout << "\n" << totalElements << " " << elementsNotProcessed << " | " << fakeElements << "\nArr: ";
-		for (size_t i = 0; i < totalWithFakeElements; i++)
-		{
-			std::cout << imageSet[i] << " ";
-		}
 
 		std::cout << "\nGetting average color of image sequence: " << imageSet[0] << "-" << imageSet[totalElements - 1] << std::endl;
 		startTime = MPI::Wtime();
@@ -152,14 +145,14 @@ int main(int argc, char const *argv[])
 		if (receivedProcesses > 0)
 			values /= receivedProcesses;
 		long averageHex = combineColors(values);
-		std::cout << receivedProcesses << " - Global average color: #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averageHex << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << values.R << " G:" << std::setw(3) << values.G << " B:" << std::setw(3) << values.B << std::endl;
+		std::cout << "Global average color: #" << std::setw(6) << std::setfill('0') << std::right << std::hex << averageHex << std::dec << ", R:" << std::setfill(' ') << std::setw(3) << values.R << " G:" << std::setw(3) << values.G << " B:" << std::setw(3) << values.B << std::endl;
 
 		std::cout << "Time elapsed: " << stopTime - startTime << "s" << std::endl;
 
 		if (benchmark)
 		{
-			std::ofstream exportFlux("benchmark.csv", std::ios::app);
-			exportFlux << totalProcesses << "," << stopTime - startTime << std::endl;
+			std::ofstream exportFlux("timeSession");
+			exportFlux << stopTime - startTime << std::endl;
 			exportFlux.close();
 		}
 	}
