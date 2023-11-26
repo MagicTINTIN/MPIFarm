@@ -95,7 +95,7 @@ To start the program:
 ```bash
 /usr/bin/mpirun -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
 # or
-mpirun -hostfile h_hostfile.cfg -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
+mpirun -hostfile hostConfigs/h_hostfile.cfg -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json
 ```
 If you have an `Invalid MIT-MAGIC-COOKIE-1 key6533927` error : 
 ```bash
@@ -105,7 +105,7 @@ xauth generate :0 . trusted # or :1, check echo $DISPLAY
 ```
 If it is still here but cause no problem, just hide it with:
 ```bash
-mpirun -hostfile h_hostfile.cfg -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json 2>/dev/null
+mpirun -hostfile hostConfigs/h_hostfile.cfg -np 2 build/MPIFarm P170B328_ServieresV_L3_small.json 2>/dev/null
 ```
 
 To compile and execute some tests, use
