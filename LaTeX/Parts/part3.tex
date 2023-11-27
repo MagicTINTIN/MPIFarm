@@ -12,10 +12,10 @@ imageSets/P170B328\_ServieresV\_L3\_0001-0512.json\\
 imageSets/P170B328\_ServieresV\_L3\_0001-1024.json\\
 imageSets/P170B328\_ServieresV\_L3\_0001-2500.json\\
 
-The two first datasets contains images of 9 pixels ($3px \times 3px$). The first one only contains 1 image, and the second contains 19 images.\\
+The two first datasets contains images (in .jpg) of 9 pixels ($3px \times 3px$). The first one only contains 1 image, and the second contains 19 images.\\
 It only took 0.0431879 seconds to a single thread to get the average value.\\
 \\
-The other sets contain images in 4K ($3840 \times 2160$). The smaller set contains 3 images, and the bigger one contains 2500 images.\\
+The other sets contain images (still in .jpg) in 4K ($3840 \times 2160$). The smaller set contains 3 images, and the bigger one contains 2500 images.\\
 It takes 151.636 seconds to a single thread to compute the average color of the latter sequence.\\
 
 \subsection{Benchmark results}
@@ -23,7 +23,9 @@ This benchmark has been executed on a cluster of 3 computers:\\
  - Manager : i7-7500U (4 cores) @ 3.5GHz with 7840 MiB of RAM\\
  - Worker1 : Celeron (4 cores) @ 2.6GHz with 3259 MiB of RAM\\
  - Worker2 : Celeron (4 cores) @ 2.2GHz with 3724 MiB of RAM\\
-The operating system is Ubuntu 20.04.6 LTS x86\_64 on each computer. Computers were connected between them by Wi-Fi network.
+The operating system is Ubuntu 20.04.6 LTS x86\_64 on each computer. Computers were connected between them by Wi-Fi network.\\
+\\
+The following graphs are the same, but the second one is zoomed and crop to better see the variations on the small image sets.
 \begin{figure}[H]
     \centering
     \includegraphics[width=8.2cm]{images/perfsAverage.png}

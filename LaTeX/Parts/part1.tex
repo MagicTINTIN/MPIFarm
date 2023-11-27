@@ -7,6 +7,7 @@ In movie production, we might need with high resolution images, and a lot of ima
 Thus, we can use cluster of computers to divide the work among several computers.\\
 \subsection{How concurrency is used}
 This is where our data concurrency is used. We give to each core of the processor of each computer on the network a list of images to process in order to get their average color.\\
+The data which is shared is the numbers of the images to process. Computers need to have the same images with the same name at the same place, a shared directory can do the job if we don't want the images to be copied on each computer separately.
 \subsection{Language/tools used}
 The language used is \textbf{C++} in order to get the best performences. The data concurrency is done using \textbf{MPI}.\\
 The MPI tools used are \textbf{Scatter} to distribute the work to all computers and \textbf{Gather} to get the average values back.
