@@ -6,4 +6,5 @@ If we had to do the calculations without using concurrency it would take \textbf
 If we simply used data concurrency on a single computer it would have taken \textbf{74.8672} seconds, which is better but not as good as the custer performences.\\
 Indeed, using a simple cluster of only 3 low performences computer, we managed to do all the calculations in only \textbf{23.531} seconds.\\
 \\
-However, the only problem could be the fact that MPI is only working on Linux operating systems, which implies to have a dedicated cluster of computers if the computers used by the studio are not running on Linux.
+However, the only problem could be the fact that MPI is only working on Linux operating systems, which implies to have a dedicated cluster of computers if the computers used by the studio are not running on Linux (which is not usual for the moment).\\
+Also, all the files should have the same directory path, so it implies adding a shared directory or adding a system that synchronise the files between all the computers of the cluster.

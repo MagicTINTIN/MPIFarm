@@ -23,7 +23,12 @@ This benchmark has been executed on a cluster of 3 computers:\\
  - Manager : i7-7500U (4 cores) @ 3.5GHz with 7840 MiB of RAM\\
  - Worker1 : Celeron (4 cores) @ 2.6GHz with 3259 MiB of RAM\\
  - Worker2 : Celeron (4 cores) @ 2.2GHz with 3724 MiB of RAM\\
-The operating system is Ubuntu 20.04.6 LTS x86\_64 on each computer. Computers were connected between them by Wi-Fi network.
+The operating system is Ubuntu 20.04.6 LTS x86\_64 on each computer. Computers were connected between them by Wi-Fi network.\\
+\\
+In order to distribute the work among processors the more evenly possible, we used the argument \emph{--map-by node} in mpirun. This way, it starts processes in a round-robin fashion accross all the computers of the network. In our case, for 8 processes:\\
+- Manager : Processes 1, 4, 7\\
+- Worker1 : Processes 2, 5, 8\\
+- Worker2 : Processes 3, 6\\
 \begin{figure}[H]
     \centering
     \includegraphics[width=8.2cm]{images/perfsAverage.png}
