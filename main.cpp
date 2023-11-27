@@ -4,15 +4,10 @@
 #include <mpi.h>
 #include <iomanip>
 #include <fstream>
-#include <filesystem>
 #include "imageprocess.h"
 #include "includes/nlohmann/json.hpp"
 
 using json = nlohmann::json;
-
-const int MAIN_PROCESS = 0;
-const int TAG_PARTIAL_ARRAY = 2;
-const int TAG_PARTIAL_SUM = 1;
 
 std::string getName(std::string const &name, int const &val, int const &max)
 {
@@ -29,11 +24,6 @@ std::string getName(std::string const &name, int const &val, int const &max)
 
 long averageMultipleImages(int *imageSet, int const &nbImages, int const &processNb, int const &totalSize, std::string const &prefix)
 {
-	// std::cout << processNb << " is currently in " << fs::current_path() << std::endl;
-	// std::ofstream exportFlux("/home/user/Documents/filefromMPIFarm", std::ios::app);
-	// exportFlux << "Process nb " << processNb << " is currently in " << fs::current_path() << std::endl;
-	// exportFlux.close();
-
 	rgb values(0, 0, 0);
 	int imagesProcessed(0);
 	for (size_t i = 0; i < nbImages; i++)
@@ -51,7 +41,6 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 	else
 		return -1;
 
-	// return std::min(combineColors(values), (long) 0xffffff);
 	return combineColors(values);
 }
 
@@ -116,11 +105,17 @@ int main(int argc, char const *argv[])
 			}
 		}
 
-		// for (size_t i = 0; i < totalWithFakeElements; i++)
-		// {
-		// 	std::cout << imageSet[i] << " ";
-		// }
-		std::cout << std::endl;
+		/* Uncomment to visualise the distribution among processes
+		 *
+		 * for (size_t i = 0; i < totalWithFakeElements; i++)
+		 * {
+		 * 	if (i % elementsPerProcess == 0)
+		 * 		std::cout << "| ";
+		 * 	std::cout << imageSet[i] << " ";
+		 * }
+		 * std::cout << "|";
+		 * std::cout << std::endl;
+		 */
 
 		std::cout << "\nGetting average color of image sequence: " << dataSetJSON["sequenceNumbers"][0] << "-" << dataSetJSON["sequenceNumbers"][totalElements - 1] << std::endl;
 		startTime = MPI::Wtime();
