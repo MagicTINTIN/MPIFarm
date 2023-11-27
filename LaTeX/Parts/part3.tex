@@ -1,4 +1,60 @@
 \section{Performance analysis}
-Time elapsed: 151.636s\\
-Time elapsed: 74.8672s\\
-Time elapsed: 23.531s\\
+\subsection{Datasets used}
+Here is the list of the datasets used in the benchmark.
+imageSets/P170B328\_ServieresV\_L3\_smallest.json\\
+imageSets/P170B328\_ServieresV\_L3\_xxsmall.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-0003.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-0012.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-0024.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-0064.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-0128.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-0512.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-1024.json\\
+imageSets/P170B328\_ServieresV\_L3\_0001-2500.json\\
+
+The two first datasets contains images of 9 pixels ($3px \times 3px$). The first one only contains 1 image, and the second contains 19 images.\\
+It only took 0.0431879 seconds to a single thread to get the average value.\\
+\\
+The other sets contain images in 4K ($3840 \times 2160$). The smaller set contains 3 images, and the bigger one contains 2500 images.\\
+It takes 151.636 seconds to a single thread to compute the average color of the latter sequence.\\
+
+\subsection{Benchmark results}
+This benchmark has been executed on a cluster of 3 computers:\\
+ - Manager : i7-7500U (4 cores) @ 3.5GHz with 7840 MiB of RAM\\
+ - Worker1 : Celeron (4 cores) @ 2.6GHz with 3259 MiB of RAM\\
+ - Worker2 : Celeron (4 cores) @ 2.2GHz with 3724 MiB of RAM\\
+The operating system is Ubuntu 20.04.6 LTS x86\_64 on each computer. Computers were connected between them by Wi-Fi network.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=8.2cm]{images/perfsAverage.png}
+    \includegraphics[width=8.2cm]{images/perfsAverageZoomed.png}
+    \caption{Results from benchmark}
+    \label{fig:benchmarkResAverage}
+\end{figure}
+In these graphs, we plotted the calculations' duration (in seconds) depending on the number of processes available. We tested it for each dataset.\\
+The values here are average values, each configuration has been tested 6 times.\\
+You can see below the exact values for each test.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm]{images/perfsAll.png}
+    \caption{Results from benchmark}
+    \label{fig:benchmarkRes}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm]{images/perfsAllZoomed.png}
+    \caption{Results from benchmark}
+    \label{fig:benchmarkResZoomed}
+\end{figure}
+As we can see if the calculations are too simple, it is better to spawn only one process.
+For bigger sets, which need more calculations we can see that the best number of procresses is around 12.
+
+\subsection{Explanations}
+MPI introduce a new latency, the network. Indeed, to communicate information with the other computers of the cluster, MPI needs to send requests which take more time than just executed the calculations on a single thread without communicating anything.\\
+So if the dataset is too small (< number of cores of the cluster), and/or if the images of the set are too small (only few pixels), it is quicker to use a single thread.\\
+\\
+For bigger datasets, we can see that the minimum of calculations' duration is around 12.\\
+This is normal because it is the total number of cores of the cluster (4 + 4 + 4 = 12).\\
+If we start fewer processes, then we do not use the processors at 100\% of their capacity, so it will be less efficient.\\
+Otherwise, if we start more processes, then we don't have "perfect" parallelism. Processors of each computer have to do context switching between all processes as there are more active processes than cores available to run them. This slows down calculations.
