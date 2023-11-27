@@ -3,10 +3,10 @@
 \subsection{Problem being solved}
 We have a sequence of images, it could be images from a movie in production. We want to have the average color of that image sequence.\\
 It can be useful to know what color leads the image and then apply colorimetry correction on it.\\
-In movie production, we might need with high resolution images, and a lot of images. So we need to get these calculations to be quick. However, computers have limited performences.\\
+In movie production, we might need with high resolution images, and a lot of images. So we need to get these calculations to be quick. However, computers have limited performances.\\
 Thus, we can use cluster of computers to divide the work among several computers.\\
 \subsection{How concurrency is used}
-This is where our data concurrency is used. We give to each core of the processor of each computer on the network a list of images to process in order to get their average color.\\
+This is where our data concurrency is used. We give to each core of the processor of each computer on the network a subset of the list of images to process in order to get their average color. And then we do the average of the averages from all computers.\\
 \subsection{Language/tools used}
-The language used is \textbf{C++} in order to get the best performences. The data concurrency is done using \textbf{MPI}.\\
+The language used in this project is the \textbf{C++} in order to get the best performances. The data concurrency is done using \textbf{MPI}.\\
 The MPI tools used are \textbf{Scatter} to distribute the work to all computers and \textbf{Gather} to get the average values back.

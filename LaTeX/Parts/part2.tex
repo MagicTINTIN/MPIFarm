@@ -13,17 +13,17 @@ To compile the program, execute:
     bash \$ ./cmakecompile --release
 \end{resultbox}
 
-\subsubsection{Configure cluster (optionnal)}
+\subsubsection{Configure cluster (optional)}
 To configure the cluster you might need to configure a passwordless ssh. To do so, execute these commands between all worker-manager node:
 \begin{resultbox}
     bash \$ ssh-keygen -t rsa -b 4096\\
     bash \$ ssh-copy-id username@remote-machine
 \end{resultbox}
-Then, modify on each computer, modify the ssh deamon config:
+Then, on each computer, modify the ssh deamon config:
 \begin{resultbox}
     bash \$ sudo nvim /etc/ssh/sshd\_config
 \end{resultbox}
-You can also use nano, or whatever text editor:
+You can also use nano, or whatever text editor. Modify these values to enable Public Key Authentification:
 \begin{resultbox}
 PubkeyAuthentication yes\\
 PasswordAuthentication no\\
