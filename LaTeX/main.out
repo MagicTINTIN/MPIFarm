@@ -3,5 +3,11 @@
 \BOOKMARK [2][-]{subsection.1.2}{How concurrency is used}{section.1}% 3
 \BOOKMARK [2][-]{subsection.1.3}{Language/tools used}{section.1}% 4
 \BOOKMARK [1][-]{section.2}{Testing the program}{}% 5
-\BOOKMARK [1][-]{section.3}{Performance analysis}{}% 6
-\BOOKMARK [1][-]{section.4}{Conclusion}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Installation}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Dependencies}{subsection.2.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Compile}{subsection.2.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Configure cluster \(optionnal\)}{subsection.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Test the program}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Calculated value}{subsection.2.2}% 11
+\BOOKMARK [1][-]{section.3}{Performance analysis}{}% 12
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 13

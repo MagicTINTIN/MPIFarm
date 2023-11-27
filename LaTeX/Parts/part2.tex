@@ -1,4 +1,45 @@
 \section{Testing the program}
-Time elapsed: 151.636s
-Time elapsed: 74.8672s
-Time elapsed: 23.531s
+\subsection{Installation}
+You can download the full project with all the datasets here : \url{https://github.com/MagicTINTIN/MPIFarm}.\\
+\subsubsection{Dependencies}
+You will need to install the following dependencies:
+\begin{resultbox}
+    bash \$ sudo apt install g++ cmake openssh-server libopenmpi-dev openmpi-bin libopencv-dev
+\end{resultbox}
+
+\subsubsection{Compile}
+To compile the program, execute:
+\begin{resultbox}
+    bash \$ ./cmakecompile --release
+\end{resultbox}
+
+\subsubsection{Configure cluster (optionnal)}
+To configure the cluster you might need to configure a passwordless ssh. To do so, execute these commands between all worker-manager node:
+\begin{resultbox}
+    bash \$ ssh-keygen -t rsa -b 4096\\
+    bash \$ ssh-copy-id username@remote-machine
+\end{resultbox}
+Then, modify on each computer, modify the ssh deamon config:
+\begin{resultbox}
+    bash \$ sudo nvim /etc/ssh/sshd\_config
+\end{resultbox}
+You can also use nano, or whatever text editor:
+\begin{resultbox}
+PubkeyAuthentication yes\\
+PasswordAuthentication no\\
+ChallengeResponseAuthentication no
+\end{resultbox}
+Finally, you can restart the daemon.
+\begin{resultbox}
+    bash \$ sudo systemctl restart ssh
+\end{resultbox}
+
+\subsection{Test the program}
+\subsubsection{Calculated value}
+To test the program, I created images with Krita for the specific images (in the folder otherImages/), and for the rainbow/ image sequence I used Blender (these two software are open source).\\
+To test that the average color is the true one, I created otherImages/check1.jpg with only one solid color \#ee7700.\\
+Then, we just need to execute the program:
+\begin{resultbox}
+bash \$ ./start.sh single imageSets/P170B328\_ServieresV\_L3\_check.json 1\\
+Global average color: \#ee7700, R:238 G:119 B:  0
+\end{resultbox}
