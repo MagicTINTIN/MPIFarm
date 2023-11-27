@@ -1,6 +1,6 @@
 \section{Testing the program}
 \subsection{Installation}
-You can download the full project with all the datasets here : \url{https://github.com/MagicTINTIN/MPIFarm}.\\
+You can download the full project with all the datasets here : \url{https://github.com/MagicTINTIN/MPIFarm}.
 \subsubsection{Dependencies}
 You will need to install the following dependencies:
 \begin{resultbox}
@@ -51,7 +51,12 @@ To compile this program you only need to execute:
 \end{resultbox}
 \subsubsection{Calculated value}
 To test the program, I created images with Krita for the specific images (in the folder otherImages/), and for the rainbow/ image sequence I used Blender (these two software are open source).\\
-To test that the average color is the true one, I created otherImages/check1.jpg with only one solid color \#ee7700.\\
+To test that the average color is the true one, I created otherImages/check1.jpg with only one solid color \#ee7700.\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{images/colorcheck.png}
+    \caption{Results from benchmark}
+    \label{fig:colorCheck}
+\end{figure}
 Then, we just need to execute the program:
 \begin{resultbox}
 bash \$ ./start.sh single imageSets/P170B328\_ServieresV\_L3\_check.json 1\\
