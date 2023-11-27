@@ -43,7 +43,6 @@ long averageMultipleImages(int *imageSet, int const &nbImages, int const &proces
 			std::string filename = getName(prefix, imageSet[i], totalSize);
 			values += averageColorImg(filename);
 			imagesProcessed++;
-			std::cout << " " << values.R << " " << values.G << " " << values.B << std::endl;
 		}
 	}
 
@@ -104,17 +103,26 @@ int main(int argc, char const *argv[])
 
 	if (rank == 0)
 	{
-		imageSet = new int[totalWithFakeElements];
-		for (size_t i = 0; i < totalElements; ++i)
+		imageSet = new int[totalWithFakeElements]{-1};
+		int elementNbOfJSON(0);
+		for (size_t pnb = 0; pnb < totalProcesses; pnb++)
 		{
-			imageSet[i] = dataSetJSON["sequenceNumbers"][i];
-		}
-		for (size_t i = totalElements; i < totalElements + fakeElements; i++)
-		{
-			imageSet[i] = -1;
+			for (size_t eop = 0; eop < elementsPerProcess; eop++)
+			{
+				if (eop == elementsPerProcess - 1 && pnb < fakeElements)
+					imageSet[pnb * elementsPerProcess + eop] = -1;
+				else
+					imageSet[pnb * elementsPerProcess + eop] = dataSetJSON["sequenceNumbers"][elementNbOfJSON++];
+			}
 		}
 
-		std::cout << "\nGetting average color of image sequence: " << imageSet[0] << "-" << imageSet[totalElements - 1] << std::endl;
+		// for (size_t i = 0; i < totalWithFakeElements; i++)
+		// {
+		// 	std::cout << imageSet[i] << " ";
+		// }
+		std::cout << std::endl;
+
+		std::cout << "\nGetting average color of image sequence: " << dataSetJSON["sequenceNumbers"][0] << "-" << dataSetJSON["sequenceNumbers"][totalElements - 1] << std::endl;
 		startTime = MPI::Wtime();
 	}
 
