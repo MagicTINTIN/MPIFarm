@@ -1,5 +1,9 @@
 \section{Conclusion}
-
-Time elapsed: 151.636s\\
-Time elapsed: 74.8672s\\
-Time elapsed: 23.531s\\
+During this engineering project I learned to use MPI, and how to create cluster of computers and configure basic ssh connection between them.\\
+I was suprised by the performences obtained, on the biggest dataset, I managed to get the calculations done in less than 24 seconds, which represent more than 100 images in 4K processed each second.\\
+My tools fit well my selected problem, as the images used in movie productions are numerous and big.\\
+If we had to do the calculations without using concurrency it would take \textbf{151.636} seconds on the biggest dataset.\\
+If we simply used data concurrency on a single computer it would have taken \textbf{74.8672} seconds, which is better but not as good as the custer performences.\\
+Indeed, using a simple cluster of only 3 low performences computer, we managed to do all the calculations in only \textbf{23.531} seconds.\\
+\\
+However, the only problem could be the fact that MPI is only working on Linux operating systems, which implies to have a dedicated cluster of computers if the computers used by the studio are not running on Linux.
