@@ -14,11 +14,12 @@ rm benchmarkfull.csv 2>/dev/null
 
 # SETTINGS
 
-nbRepetitions=6
-maxProcesses=24
-clusterSize="mega" #mega by default
+nbRepetitions=2 # The program will execute several times each operation to get an average value
+minProcesses=2 # The maximum number of processes to benchmark
+maxProcesses= 6 # The maximum number of processes to benchmark
+clusterSize="single" # single | mega | custom: as described in ./start.sh
 
-fill_character="#"
+fill_character=" "
 
 # DISPLAY
 
@@ -28,8 +29,15 @@ for ((i = 0; i < $console_width; i++)); do
     sectionTerminator+=$fill_character
 done
 
-echo -ne "$sectionTerminator\nBenchmarking MPIFarm\n$sectionTerminator\n"
-echo "List of the image sets: "
+echo -ne "$(tput setab 7)"
+echo -ne "$(tput setaf 7)"
+echo -ne "$sectionTerminator"
+echo -ne "$(tput sgr0)"
+echo -ne "\nBenchmarking MPIFarm\n"
+echo -ne "$(tput setab 7)"
+echo -ne "$(tput setaf 7)"
+echo -ne "$sectionTerminator"
+echo -ne "$(tput sgr0)"
 
 # CREATE SET LIST
 
@@ -72,6 +80,7 @@ setLabels=(
     "2500 images"
 )
 
+# You can overwrite this variable to create your own benchmark tests
 # imageSets=(
 #     "imageSets/P170B328_ServieresV_L3_smallest.json"
 #     "imageSets/P170B328_ServieresV_L3_xxsmall.json"
@@ -87,11 +96,15 @@ setLabels=(
 #     "19 images (9px)"
 # )
 
+echo -ne "$(tput setaf 8)"
+echo "List of the image sets: "
+
 totalSets=0
 for imageSet in "${imageSets[@]}"; do
     echo "- $imageSet"
     totalSets=$((totalSets + 1))
 done
+echo -ne "$(tput sgr0)"
 
 # PREPARING CSV FILE
 echo -ne "\"Number of processes\"" >>benchmark.csv
@@ -106,25 +119,29 @@ done
 
 # Calculate number of runs
 totalRuns=0
-for ((nbProcesses = 1; nbProcesses < $maxProcesses + 1; nbProcesses++)); do
+totalProcesses=0
+for ((nbProcesses = $minProcesses; nbProcesses < $maxProcesses + 1; nbProcesses++)); do
     for imageSet in "${imageSets[@]}"; do
         for ((repNb = 1; repNb < $nbRepetitions + 1; repNb++)); do
             totalRuns=$((totalRuns + 1))
         done
     done
+    totalProcesses=$((totalProcesses + 1))
 done
 
 # STARTING BENCHMARK
-echo "Starting benchmark..."
+echo -ne "$(tput setaf 3)Starting benchmark...\n"
+echo -ne "$(tput sgr0)"
 runNb=1
-for ((nbProcesses = 1; nbProcesses < $maxProcesses + 1; nbProcesses++)); do
+procNb=1
+for ((nbProcesses = $minProcesses; nbProcesses < $maxProcesses + 1; nbProcesses++)); do
     echo -ne "\n$nbProcesses" >>benchmark.csv
     echo -ne "\n$nbProcesses" >>benchmarkfull.csv
     setNb=1
     for imageSet in "${imageSets[@]}"; do
         avgTime=0
         for ((repNb = 1; repNb < $nbRepetitions + 1; repNb++)); do
-            logLine="$(date +%T): $nbProcesses/$maxProcesses Processes - Set $setNb/$totalSets (rep $repNb/$nbRepetitions) | Run $runNb/$totalRuns - $(($runNb * 100 / $totalRuns))%"
+            logLine="$(date +%T): $nbProcesses Processes ($procNb/$totalProcesses) - Set $setNb/$totalSets (rep $repNb/$nbRepetitions) | Run $runNb/$totalRuns - $(($runNb * 100 / $totalRuns))%"
             echo $logLine
             echo $logLine >>benchmark.log
             echo "\n\n$logLine : " >>benchmarkErrors.log
@@ -140,4 +157,10 @@ for ((nbProcesses = 1; nbProcesses < $maxProcesses + 1; nbProcesses++)); do
         echo -ne ",$avgTime" >>benchmarkfull.csv
         setNb=$((setNb + 1))
     done
+    procNb=$((procNb + 1))
 done
+
+echo -ne "$(tput setaf 10)$(tput bold)End of benchmark.\n"
+echo -ne "$(tput sgr0)"
+echo -ne "$(tput setaf 8)Benchmark results are in benchmark.csv and benchmarkfull.csv\n"
+echo -ne "$(tput sgr0)"

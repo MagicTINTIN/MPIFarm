@@ -1,6 +1,6 @@
 \section{Testing the program}
 \subsection{Installation}
-You can download the full project with all the datasets here : \url{https://github.com/MagicTINTIN/MPIFarm}.\\
+You can download the full project with all the datasets here : \url{https://github.com/MagicTINTIN/MPIFarm}.
 \subsubsection{Dependencies}
 You will need to install the following dependencies:
 \begin{resultbox}
@@ -13,17 +13,17 @@ To compile the program, execute:
     bash \$ ./cmakecompile --release
 \end{resultbox}
 
-\subsubsection{Configure cluster (optionnal)}
+\subsubsection{Configure cluster (optional)}
 To configure the cluster you might need to configure a passwordless ssh. To do so, execute these commands between all worker-manager node:
 \begin{resultbox}
     bash \$ ssh-keygen -t rsa -b 4096\\
     bash \$ ssh-copy-id username@remote-machine
 \end{resultbox}
-Then, modify on each computer, modify the ssh deamon config:
+Then, on each computer, modify the ssh deamon config:
 \begin{resultbox}
     bash \$ sudo nvim /etc/ssh/sshd\_config
 \end{resultbox}
-You can also use nano, or whatever text editor:
+You can also use nano, or whatever text editor. Modify these values to enable Public Key Authentification:
 \begin{resultbox}
 PubkeyAuthentication yes\\
 PasswordAuthentication no\\
@@ -51,7 +51,12 @@ To compile this program you only need to execute:
 \end{resultbox}
 \subsubsection{Calculated value}
 To test the program, I created images with Krita for the specific images (in the folder otherImages/), and for the rainbow/ image sequence I used Blender (these two software are open source).\\
-To test that the average color is the true one, I created otherImages/check1.jpg with only one solid color \#ee7700.\\
+To test that the average color is the true one, I created otherImages/check1.jpg with only one solid color \#ee7700.\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{images/colorcheck.png}
+    \caption{Results from benchmark}
+    \label{fig:colorCheck}
+\end{figure}
 Then, we just need to execute the program:
 \begin{resultbox}
 bash \$ ./start.sh single imageSets/P170B328\_ServieresV\_L3\_check.json 1\\
@@ -63,5 +68,5 @@ You can easily start a benchmark using the following script.
 \begin{resultbox}
     bash \$ ./benchmark.sh
 \end{resultbox}
-You can modify the first variable to choose the settings of your benchmark.\\
+You can modify the first variables to choose the settings of your benchmark.\\
 The results will be exported in benchmark.csv and benchmarkfull.csv.

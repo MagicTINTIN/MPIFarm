@@ -29850,3 +29850,2050 @@ Process n°22 : #9b9c9d, R:155 G:156 B:157
 Process n°23 : #9c9a94, R:156 G:154 B:148
 Global average color: #8c8a89, R:140 G:138 B:137
 Time elapsed: 50.3326s
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:03:43 +0200
+########################################
+
+11:03:43: 1/5 Processes - Set 1/2 (rep 1/6) | Run 1/60 - 1%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0547109s
+11:03:44: 1/5 Processes - Set 1/2 (rep 2/6) | Run 2/60 - 3%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0649519s
+11:03:45: 1/5 Processes - Set 1/2 (rep 3/6) | Run 3/60 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0606807s
+11:03:45: 1/5 Processes - Set 1/2 (rep 4/6) | Run 4/60 - 6%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0563099s
+11:03:46: 1/5 Processes - Set 1/2 (rep 5/6) | Run 5/60 - 8%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0617863s
+11:03:47: 1/5 Processes - Set 1/2 (rep 6/6) | Run 6/60 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0549737s
+11:03:47: 1/5 Processes - Set 2/2 (rep 1/6) | Run 7/60 - 11%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.053552s
+11:03:48: 1/5 Processes - Set 2/2 (rep 2/6) | Run 8/60 - 13%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0535624s
+11:03:48: 1/5 Processes - Set 2/2 (rep 3/6) | Run 9/60 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0535221s
+11:03:49: 1/5 Processes - Set 2/2 (rep 4/6) | Run 10/60 - 16%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0531723s
+11:03:49: 1/5 Processes - Set 2/2 (rep 5/6) | Run 11/60 - 18%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0521501s
+11:03:50: 1/5 Processes - Set 2/2 (rep 6/6) | Run 12/60 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0514521s
+11:03:51: 2/5 Processes - Set 1/2 (rep 1/6) | Run 13/60 - 21%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m11:03:52: 2/5 Processes - Set 1/2 (rep 2/6) | Run 14/60 - 23%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0640091s
+11:03:53: 2/5 Processes - Set 1/2 (rep 3/6) | Run 15/60 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0608548s
+11:03:53: 2/5 Processes - Set 1/2 (rep 4/6) | Run 16/60 - 26%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0510906s
+11:03:54: 2/5 Processes - Set 1/2 (rep 5/6) | Run 17/60 - 28%
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:05:17 +0200
+########################################
+
+11:05:17: 4 Processes (1/5) - Set 1/2 (rep 1/6) | Run 1/60 - 1%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0525066s
+11:05:18: 4 Processes (1/5) - Set 1/2 (rep 2/6) | Run 2/60 - 3%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.054516s
+11:05:18: 4 Processes (1/5) - Set 1/2 (rep 3/6) | Run 3/60 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.051179s
+11:05:19: 4 Processes (1/5) - Set 1/2 (rep 4/6) | Run 4/60 - 6%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0504231s
+11:05:19: 4 Processes (1/5) - Set 1/2 (rep 5/6) | Run 5/60 - 8%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0500358s
+11:05:20: 4 Processes (1/5) - Set 1/2 (rep 6/6) | Run 6/60 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0537909s
+11:05:20: 4 Processes (1/5) - Set 2/2 (rep 1/6) | Run 7/60 - 11%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0539012s
+11:05:21: 4 Processes (1/5) - Set 2/2 (rep 2/6) | Run 8/60 - 13%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0560732s
+11:05:21: 4 Processes (1/5) - Set 2/2 (rep 3/6) | Run 9/60 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0562634s
+11:05:22: 4 Processes (1/5) - Set 2/2 (rep 4/6) | Run 10/60 - 16%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0554984s
+11:05:22: 4 Processes (1/5) - Set 2/2 (rep 5/6) | Run 11/60 - 18%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0547059s
+11:05:23: 4 Processes (1/5) - Set 2/2 (rep 6/6) | Run 12/60 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.053321s
+11:05:24: 5 Processes (2/5) - Set 1/2 (rep 1/6) | Run 13/60 - 21%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0612848s
+11:05:24: 5 Processes (2/5) - Set 1/2 (rep 2/6) | Run 14/60 - 23%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0526227s
+11:05:25: 5 Processes (2/5) - Set 1/2 (rep 3/6) | Run 15/60 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0581107s
+11:05:25: 5 Processes (2/5) - Set 1/2 (rep 4/6) | Run 16/60 - 26%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0560042s
+11:05:26: 5 Processes (2/5) - Set 1/2 (rep 5/6) | Run 17/60 - 28%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0546975s
+11:05:26: 5 Processes (2/5) - Set 1/2 (rep 6/6) | Run 18/60 - 30%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0720987s
+11:05:27: 5 Processes (2/5) - Set 2/2 (rep 1/6) | Run 19/60 - 31%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0518938s
+11:05:28: 5 Processes (2/5) - Set 2/2 (rep 2/6) | Run 20/60 - 33%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0758415s
+11:05:28: 5 Processes (2/5) - Set 2/2 (rep 3/6) | Run 21/60 - 35%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0588036s
+11:05:29: 5 Processes (2/5) - Set 2/2 (rep 4/6) | Run 22/60 - 36%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0548522s
+11:05:29: 5 Processes (2/5) - Set 2/2 (rep 5/6) | Run 23/60 - 38%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0555563s
+11:05:30: 5 Processes (2/5) - Set 2/2 (rep 6/6) | Run 24/60 - 40%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0556582s
+11:05:31: 6 Processes (3/5) - Set 1/2 (rep 1/6) | Run 25/60 - 41%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0532576s
+11:05:31: 6 Processes (3/5) - Set 1/2 (rep 2/6) | Run 26/60 - 43%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0664733s
+11:05:32: 6 Processes (3/5) - Set 1/2 (rep 3/6) | Run 27/60 - 45%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0543137s
+11:05:33: 6 Processes (3/5) - Set 1/2 (rep 4/6) | Run 28/60 - 46%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0591125s
+11:05:33: 6 Processes (3/5) - Set 1/2 (rep 5/6) | Run 29/60 - 48%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0631664s
+11:05:34: 6 Processes (3/5) - Set 1/2 (rep 6/6) | Run 30/60 - 50%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0719182s
+11:05:34: 6 Processes (3/5) - Set 2/2 (rep 1/6) | Run 31/60 - 51%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0568405s
+11:05:35: 6 Processes (3/5) - Set 2/2 (rep 2/6) | Run 32/60 - 53%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0578932s
+11:05:36: 6 Processes (3/5) - Set 2/2 (rep 3/6) | Run 33/60 - 55%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0626959s
+11:05:36: 6 Processes (3/5) - Set 2/2 (rep 4/6) | Run 34/60 - 56%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.057826s
+11:05:37: 6 Processes (3/5) - Set 2/2 (rep 5/6) | Run 35/60 - 58%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0652452s
+11:05:38: 6 Processes (3/5) - Set 2/2 (rep 6/6) | Run 36/60 - 60%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0616655s
+11:05:38: 7 Processes (4/5) - Set 1/2 (rep 1/6) | Run 37/60 - 61%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0519127s
+11:05:39: 7 Processes (4/5) - Set 1/2 (rep 2/6) | Run 38/60 - 63%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0600513s
+11:05:40: 7 Processes (4/5) - Set 1/2 (rep 3/6) | Run 39/60 - 65%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0634832s
+11:05:40: 7 Processes (4/5) - Set 1/2 (rep 4/6) | Run 40/60 - 66%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0566109s
+11:05:41: 7 Processes (4/5) - Set 1/2 (rep 5/6) | Run 41/60 - 68%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0631347s
+11:05:42: 7 Processes (4/5) - Set 1/2 (rep 6/6) | Run 42/60 - 70%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0573852s
+11:05:43: 7 Processes (4/5) - Set 2/2 (rep 1/6) | Run 43/60 - 71%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0566672s
+11:05:43: 7 Processes (4/5) - Set 2/2 (rep 2/6) | Run 44/60 - 73%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0600198s
+11:05:44: 7 Processes (4/5) - Set 2/2 (rep 3/6) | Run 45/60 - 75%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0781698s
+11:05:45: 7 Processes (4/5) - Set 2/2 (rep 4/6) | Run 46/60 - 76%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0575573s
+11:05:45: 7 Processes (4/5) - Set 2/2 (rep 5/6) | Run 47/60 - 78%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0668837s
+11:05:46: 7 Processes (4/5) - Set 2/2 (rep 6/6) | Run 48/60 - 80%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0673058s
+11:05:47: 8 Processes (5/5) - Set 1/2 (rep 1/6) | Run 49/60 - 81%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.057541s
+11:05:47: 8 Processes (5/5) - Set 1/2 (rep 2/6) | Run 50/60 - 83%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0721438s
+11:05:48: 8 Processes (5/5) - Set 1/2 (rep 3/6) | Run 51/60 - 85%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0732887s
+11:05:49: 8 Processes (5/5) - Set 1/2 (rep 4/6) | Run 52/60 - 86%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0657914s
+11:05:50: 8 Processes (5/5) - Set 1/2 (rep 5/6) | Run 53/60 - 88%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0481367s
+11:05:50: 8 Processes (5/5) - Set 1/2 (rep 6/6) | Run 54/60 - 90%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0756598s
+11:05:51: 8 Processes (5/5) - Set 2/2 (rep 1/6) | Run 55/60 - 91%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0763373s
+11:05:52: 8 Processes (5/5) - Set 2/2 (rep 2/6) | Run 56/60 - 93%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0618962s
+11:05:53: 8 Processes (5/5) - Set 2/2 (rep 3/6) | Run 57/60 - 95%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.063092s
+11:05:53: 8 Processes (5/5) - Set 2/2 (rep 4/6) | Run 58/60 - 96%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0619258s
+11:05:54: 8 Processes (5/5) - Set 2/2 (rep 5/6) | Run 59/60 - 98%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0896173s
+11:05:55: 8 Processes (5/5) - Set 2/2 (rep 6/6) | Run 60/60 - 100%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0569216s
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:08:32 +0200
+########################################
+
+11:08:32: 4 Processes (1/5) - Set 1/2 (rep 1/6) | Run 1/60 - 1%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+11:08:34: 4 Processes (1/5) - Set 1/2 (rep 2/6) | Run 2/60 - 3%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m11:08:35: 4 Processes (1/5) - Set 1/2 (rep 3/6) | Run 3/60 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:13:30 +0200
+########################################
+
+11:13:30: 4 Processes (1/5) - Set 1/2 (rep 1/2) | Run 1/20 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0497078s
+11:13:31: 4 Processes (1/5) - Set 1/2 (rep 2/2) | Run 2/20 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0570716s
+11:13:31: 4 Processes (1/5) - Set 2/2 (rep 1/2) | Run 3/20 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0492705s
+11:13:32: 4 Processes (1/5) - Set 2/2 (rep 2/2) | Run 4/20 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0509194s
+11:13:32: 5 Processes (2/5) - Set 1/2 (rep 1/2) | Run 5/20 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.052524s
+11:13:33: 5 Processes (2/5) - Set 1/2 (rep 2/2) | Run 6/20 - 30%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0521806s
+11:13:34: 5 Processes (2/5) - Set 2/2 (rep 1/2) | Run 7/20 - 35%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.053074s
+11:13:34: 5 Processes (2/5) - Set 2/2 (rep 2/2) | Run 8/20 - 40%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0529987s
+11:13:35: 6 Processes (3/5) - Set 1/2 (rep 1/2) | Run 9/20 - 45%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.062365s
+11:13:35: 6 Processes (3/5) - Set 1/2 (rep 2/2) | Run 10/20 - 50%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0624196s
+11:13:36: 6 Processes (3/5) - Set 2/2 (rep 1/2) | Run 11/20 - 55%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0612602s
+11:13:37: 6 Processes (3/5) - Set 2/2 (rep 2/2) | Run 12/20 - 60%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0725262s
+11:13:38: 7 Processes (4/5) - Set 1/2 (rep 1/2) | Run 13/20 - 65%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0595886s
+11:13:38: 7 Processes (4/5) - Set 1/2 (rep 2/2) | Run 14/20 - 70%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0539251s
+11:13:39: 7 Processes (4/5) - Set 2/2 (rep 1/2) | Run 15/20 - 75%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0748178s
+11:13:40: 7 Processes (4/5) - Set 2/2 (rep 2/2) | Run 16/20 - 80%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0688008s
+11:13:40: 8 Processes (5/5) - Set 1/2 (rep 1/2) | Run 17/20 - 85%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0619817s
+11:13:41: 8 Processes (5/5) - Set 1/2 (rep 2/2) | Run 18/20 - 90%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0639864s
+11:13:42: 8 Processes (5/5) - Set 2/2 (rep 1/2) | Run 19/20 - 95%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0649122s
+11:13:43: 8 Processes (5/5) - Set 2/2 (rep 2/2) | Run 20/20 - 100%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0703699s
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:14:02 +0200
+########################################
+
+11:14:02: 4 Processes (1/5) - Set 1/2 (rep 1/2) | Run 1/20 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0534998s
+11:14:03: 4 Processes (1/5) - Set 1/2 (rep 2/2) | Run 2/20 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0549391s
+11:14:04: 4 Processes (1/5) - Set 2/2 (rep 1/2) | Run 3/20 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0501477s
+11:14:04: 4 Processes (1/5) - Set 2/2 (rep 2/2) | Run 4/20 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0489773s
+11:14:05: 5 Processes (2/5) - Set 1/2 (rep 1/2) | Run 5/20 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0531824s
+11:14:05: 5 Processes (2/5) - Set 1/2 (rep 2/2) | Run 6/20 - 30%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0533412s
+11:14:06: 5 Processes (2/5) - Set 2/2 (rep 1/2) | Run 7/20 - 35%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0632026s
+11:14:06: 5 Processes (2/5) - Set 2/2 (rep 2/2) | Run 8/20 - 40%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0546333s
+11:14:07: 6 Processes (3/5) - Set 1/2 (rep 1/2) | Run 9/20 - 45%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0552708s
+11:14:08: 6 Processes (3/5) - Set 1/2 (rep 2/2) | Run 10/20 - 50%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0589803s
+11:14:08: 6 Processes (3/5) - Set 2/2 (rep 1/2) | Run 11/20 - 55%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0600409s
+11:14:09: 6 Processes (3/5) - Set 2/2 (rep 2/2) | Run 12/20 - 60%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0566075s
+11:14:10: 7 Processes (4/5) - Set 1/2 (rep 1/2) | Run 13/20 - 65%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0588903s
+11:14:10: 7 Processes (4/5) - Set 1/2 (rep 2/2) | Run 14/20 - 70%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0646802s
+11:14:11: 7 Processes (4/5) - Set 2/2 (rep 1/2) | Run 15/20 - 75%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0646858s
+11:14:12: 7 Processes (4/5) - Set 2/2 (rep 2/2) | Run 16/20 - 80%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0655177s
+11:14:12: 8 Processes (5/5) - Set 1/2 (rep 1/2) | Run 17/20 - 85%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0600789s
+11:14:13: 8 Processes (5/5) - Set 1/2 (rep 2/2) | Run 18/20 - 90%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0763308s
+11:14:14: 8 Processes (5/5) - Set 2/2 (rep 1/2) | Run 19/20 - 95%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0766011s
+11:14:15: 8 Processes (5/5) - Set 2/2 (rep 2/2) | Run 20/20 - 100%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0699151s
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:14:50 +0200
+########################################
+
+11:14:50: 4 Processes (1/5) - Set 1/2 (rep 1/2) | Run 1/20 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0557922s
+11:14:51: 4 Processes (1/5) - Set 1/2 (rep 2/2) | Run 2/20 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0534497s
+11:14:51: 4 Processes (1/5) - Set 2/2 (rep 1/2) | Run 3/20 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.051242s
+11:14:52: 4 Processes (1/5) - Set 2/2 (rep 2/2) | Run 4/20 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0595882s
+11:14:52: 5 Processes (2/5) - Set 1/2 (rep 1/2) | Run 5/20 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0560203s
+11:14:53: 5 Processes (2/5) - Set 1/2 (rep 2/2) | Run 6/20 - 30%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0598435s
+11:14:54: 5 Processes (2/5) - Set 2/2 (rep 1/2) | Run 7/20 - 35%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0573567s
+11:14:54: 5 Processes (2/5) - Set 2/2 (rep 2/2) | Run 8/20 - 40%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0621416s
+11:14:55: 6 Processes (3/5) - Set 1/2 (rep 1/2) | Run 9/20 - 45%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0571062s
+11:14:55: 6 Processes (3/5) - Set 1/2 (rep 2/2) | Run 10/20 - 50%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.077627s
+11:14:56: 6 Processes (3/5) - Set 2/2 (rep 1/2) | Run 11/20 - 55%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0611752s
+11:14:57: 6 Processes (3/5) - Set 2/2 (rep 2/2) | Run 12/20 - 60%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0694837s
+11:14:57: 7 Processes (4/5) - Set 1/2 (rep 1/2) | Run 13/20 - 65%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0581384s
+11:14:58: 7 Processes (4/5) - Set 1/2 (rep 2/2) | Run 14/20 - 70%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0731363s
+11:14:59: 7 Processes (4/5) - Set 2/2 (rep 1/2) | Run 15/20 - 75%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0620133s
+11:15:00: 7 Processes (4/5) - Set 2/2 (rep 2/2) | Run 16/20 - 80%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0649916s
+11:15:00: 8 Processes (5/5) - Set 1/2 (rep 1/2) | Run 17/20 - 85%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0653634s
+11:15:01: 8 Processes (5/5) - Set 1/2 (rep 2/2) | Run 18/20 - 90%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.057089s
+11:15:02: 8 Processes (5/5) - Set 2/2 (rep 1/2) | Run 19/20 - 95%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0747393s
+11:15:03: 8 Processes (5/5) - Set 2/2 (rep 2/2) | Run 20/20 - 100%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0627825s
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:17:14 +0200
+########################################
+
+11:17:14: 4 Processes (1/5) - Set 1/2 (rep 1/2) | Run 1/20 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0551934s
+11:17:14: 4 Processes (1/5) - Set 1/2 (rep 2/2) | Run 2/20 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0706742s
+11:17:15: 4 Processes (1/5) - Set 2/2 (rep 1/2) | Run 3/20 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0513774s
+11:17:15: 4 Processes (1/5) - Set 2/2 (rep 2/2) | Run 4/20 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0534158s
+11:17:16: 5 Processes (2/5) - Set 1/2 (rep 1/2) | Run 5/20 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0536516s
+11:17:16: 5 Processes (2/5) - Set 1/2 (rep 2/2) | Run 6/20 - 30%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0538993s
+11:17:17: 5 Processes (2/5) - Set 2/2 (rep 1/2) | Run 7/20 - 35%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0553094s
+11:17:18: 5 Processes (2/5) - Set 2/2 (rep 2/2) | Run 8/20 - 40%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0602113s
+11:17:18: 6 Processes (3/5) - Set 1/2 (rep 1/2) | Run 9/20 - 45%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m11:17:19: 6 Processes (3/5) - Set 1/2 (rep 2/2) | Run 10/20 - 50%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0608191s
+11:17:20: 6 Processes (3/5) - Set 2/2 (rep 1/2) | Run 11/20 - 55%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0575388s
+11:17:21: 6 Processes (3/5) - Set 2/2 (rep 2/2) | Run 12/20 - 60%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.076299s
+11:17:21: 7 Processes (4/5) - Set 1/2 (rep 1/2) | Run 13/20 - 65%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0482333s
+11:17:22: 7 Processes (4/5) - Set 1/2 (rep 2/2) | Run 14/20 - 70%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0612472s
+11:17:23: 7 Processes (4/5) - Set 2/2 (rep 1/2) | Run 15/20 - 75%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0608227s
+11:17:23: 7 Processes (4/5) - Set 2/2 (rep 2/2) | Run 16/20 - 80%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0568441s
+11:17:24: 8 Processes (5/5) - Set 1/2 (rep 1/2) | Run 17/20 - 85%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0752137s
+11:17:25: 8 Processes (5/5) - Set 1/2 (rep 2/2) | Run 18/20 - 90%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0591519s
+11:17:26: 8 Processes (5/5) - Set 2/2 (rep 1/2) | Run 19/20 - 95%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.095934s
+11:17:26: 8 Processes (5/5) - Set 2/2 (rep 2/2) | Run 20/20 - 100%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0673883s
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:19:17 +0200
+########################################
+
+11:19:17: 4 Processes (1/5) - Set 1/2 (rep 1/2) | Run 1/20 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0511326s
+11:19:17: 4 Processes (1/5) - Set 1/2 (rep 2/2) | Run 2/20 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0612555s
+11:19:18: 4 Processes (1/5) - Set 2/2 (rep 1/2) | Run 3/20 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0561707s
+11:19:18: 4 Processes (1/5) - Set 2/2 (rep 2/2) | Run 4/20 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0542079s
+11:19:19: 5 Processes (2/5) - Set 1/2 (rep 1/2) | Run 5/20 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0565699s
+11:19:19: 5 Processes (2/5) - Set 1/2 (rep 2/2) | Run 6/20 - 30%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0769332s
+11:19:20: 5 Processes (2/5) - Set 2/2 (rep 1/2) | Run 7/20 - 35%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0522718s
+11:19:21: 5 Processes (2/5) - Set 2/2 (rep 2/2) | Run 8/20 - 40%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0653559s
+11:19:21: 6 Processes (3/5) - Set 1/2 (rep 1/2) | Run 9/20 - 45%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0751692s
+11:19:22: 6 Processes (3/5) - Set 1/2 (rep 2/2) | Run 10/20 - 50%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.064644s
+11:19:22: 6 Processes (3/5) - Set 2/2 (rep 1/2) | Run 11/20 - 55%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0577949s
+11:19:23: 6 Processes (3/5) - Set 2/2 (rep 2/2) | Run 12/20 - 60%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0567221s
+11:19:24: 7 Processes (4/5) - Set 1/2 (rep 1/2) | Run 13/20 - 65%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0687465s
+11:19:24: 7 Processes (4/5) - Set 1/2 (rep 2/2) | Run 14/20 - 70%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0641186s
+11:19:25: 7 Processes (4/5) - Set 2/2 (rep 1/2) | Run 15/20 - 75%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0696005s
+11:19:26: 7 Processes (4/5) - Set 2/2 (rep 2/2) | Run 16/20 - 80%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0697952s
+11:19:27: 8 Processes (5/5) - Set 1/2 (rep 1/2) | Run 17/20 - 85%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0735001s
+11:19:28: 8 Processes (5/5) - Set 1/2 (rep 2/2) | Run 18/20 - 90%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0674092s
+11:19:28: 8 Processes (5/5) - Set 2/2 (rep 1/2) | Run 19/20 - 95%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0805391s
+11:19:29: 8 Processes (5/5) - Set 2/2 (rep 2/2) | Run 20/20 - 100%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0958809s
+
+
+
+STARTING NEW BENCHMARK
+Mon, 27 Nov 2023 11:21:02 +0200
+########################################
+
+11:21:02: 4 Processes (1/5) - Set 1/2 (rep 1/2) | Run 1/20 - 5%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0519216s
+11:21:03: 4 Processes (1/5) - Set 1/2 (rep 2/2) | Run 2/20 - 10%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0500816s
+11:21:04: 4 Processes (1/5) - Set 2/2 (rep 1/2) | Run 3/20 - 15%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0526135s
+11:21:04: 4 Processes (1/5) - Set 2/2 (rep 2/2) | Run 4/20 - 20%
+[32mStarting single (4 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 4 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7e7e7e, R:126 G:126 B:126
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.052542s
+11:21:05: 5 Processes (2/5) - Set 1/2 (rep 1/2) | Run 5/20 - 25%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0527575s
+11:21:05: 5 Processes (2/5) - Set 1/2 (rep 2/2) | Run 6/20 - 30%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0597918s
+11:21:06: 5 Processes (2/5) - Set 2/2 (rep 1/2) | Run 7/20 - 35%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0586s
+11:21:06: 5 Processes (2/5) - Set 2/2 (rep 2/2) | Run 8/20 - 40%
+[32mStarting single (5 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 5 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7e7e7e, R:126 G:126 B:126
+Process n°3 : #7f7f7f, R:127 G:127 B:127
+Process n°4 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0577441s
+11:21:07: 6 Processes (3/5) - Set 1/2 (rep 1/2) | Run 9/20 - 45%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0526844s
+11:21:08: 6 Processes (3/5) - Set 1/2 (rep 2/2) | Run 10/20 - 50%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0638564s
+11:21:08: 6 Processes (3/5) - Set 2/2 (rep 1/2) | Run 11/20 - 55%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0611685s
+11:21:09: 6 Processes (3/5) - Set 2/2 (rep 2/2) | Run 12/20 - 60%
+[32mStarting single (6 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 6 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0560177s
+11:21:10: 7 Processes (4/5) - Set 1/2 (rep 1/2) | Run 13/20 - 65%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0663814s
+11:21:10: 7 Processes (4/5) - Set 1/2 (rep 2/2) | Run 14/20 - 70%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0563091s
+11:21:11: 7 Processes (4/5) - Set 2/2 (rep 1/2) | Run 15/20 - 75%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.055335s
+11:21:12: 7 Processes (4/5) - Set 2/2 (rep 2/2) | Run 16/20 - 80%
+[32mStarting single (7 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 7 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0633897s
+11:21:12: 8 Processes (5/5) - Set 1/2 (rep 1/2) | Run 17/20 - 85%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.068247s
+11:21:13: 8 Processes (5/5) - Set 1/2 (rep 2/2) | Run 18/20 - 90%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_smallest.json --benchmark
+(B[m
+Getting average color of image sequence: 1-1
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Global average color: #7f7f7f, R:127 G:127 B:127
+Time elapsed: 0.0654764s
+11:21:14: 8 Processes (5/5) - Set 2/2 (rep 1/2) | Run 19/20 - 95%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0588822s
+11:21:15: 8 Processes (5/5) - Set 2/2 (rep 2/2) | Run 20/20 - 100%
+[32mStarting single (8 processes)
+[33m> mpirun -hostfile hostConfigs/h_single.cfg --map-by node -np 8 build/MPIFarm imageSets/P170B328_ServieresV_L3_xxsmall.json --benchmark
+(B[m
+Getting average color of image sequence: 0-18
+Process n°0 : #7f7f7f, R:127 G:127 B:127
+Process n°1 : #7e7e7e, R:126 G:126 B:126
+Process n°2 : #7f7f7f, R:127 G:127 B:127
+Process n°3 : #7e7e7e, R:126 G:126 B:126
+Process n°4 : #7f7f7f, R:127 G:127 B:127
+Process n°5 : #7e7e7e, R:126 G:126 B:126
+Global average color: #7e7e7e, R:126 G:126 B:126
+Time elapsed: 0.0630099s

@@ -1,10 +1,11 @@
 \section{Conclusion}
 \begin{enumerate}
-    \item During this engineering project I learned to use MPI, and how to create cluster of computers and configure basic ssh connection between them.\\
-    \item  I was suprised by the performences obtained, on the biggest dataset, I managed to get the calculations done in less than 24 seconds, which represent more than 100 images in 4K processed each second.\\
-    \item  My tools fit well my selected problem, as the images used in movie productions are numerous and big.\\
+    \item During this engineering project I learned to use MPI, how to create cluster of computers and how to configure basic ssh connection between them.\\
+    \item  I was suprised by the performances obtained, on the biggest dataset, I managed to get the calculations done in less than 24 seconds, which represent more than 100 images in 4K processed each second.\\
+    \item  My tool fits well my selected problem, as the images used in movie productions are numerous and big.\\
     \item  If we had to do the calculations without using concurrency it would take \textbf{151.636} seconds on the biggest dataset.\\
-    If we simply used data concurrency on a single computer it would have taken \textbf{74.8672} seconds, which is better but not as good as the custer performences.\\
-    Indeed, using a simple cluster of only 3 low performences computer, we managed to do all the calculations in only \textbf{23.531} seconds.\\
-    \item However, the only problem could be the fact that MPI is only working on Linux operating systems, which implies to have a dedicated cluster of computers if the computers used by the studio are not running on Linux.
+    If we simply used data concurrency on a single computer it would have taken \textbf{74.8672} seconds, which is better but not as good as the custer performances.\\
+    Indeed, using a simple cluster of only 3 low performances' computer, we managed to do all the calculations in only \textbf{23.531} seconds.\\
+    \item However, the only problem could be the fact that MPI is only working on Linux operating systems, which implies to have a dedicated cluster of computers if the computers used by the studio are not running on Linux (which is probable).\\
+    Also, all the files should have the same directory path, so it implies adding a shared directory or adding a system that synchronise the files between all the computers of the cluster.
 \end{enumerate}

@@ -34,22 +34,6 @@ void rgb::operator*(const int &v)
     B *= v;
 }
 
-/*rgb rgb::operator+(rgb v, const rgb &n)
-{
-    v.R += n.R;
-    v.G += n.G;
-    v.B += n.B;
-    return v;
-}
-
-rgb rgb::operator-(rgb v, const rgb &n)
-{
-    v.R -= n.R;
-    v.G -= n.G;
-    v.B -= n.B;
-    return v;
-}*/
-
 rgb &rgb::operator+=(const rgb &v)
 {
     this->R += v.R;
@@ -60,11 +44,8 @@ rgb &rgb::operator+=(const rgb &v)
 
 rgb &rgb::operator/=(const int &v)
 {
-    //this->R = (10 * this->R + 5) / (v * 10);
     this->R /= v;
-    //this->G = (10 * this->G + 5) / (v * 10);
     this->G /= v;
-    //this->B = (10 * this->B + 5) / (v * 10);
     this->B /= v;
     return *this;
 }
